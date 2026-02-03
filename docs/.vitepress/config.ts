@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "OpenClaw CN",
   description: "更懂中文环境的 Local Agent 实战社区",
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png', // 这里引用刚才放进去的logo
