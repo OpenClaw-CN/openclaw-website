@@ -7,6 +7,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png', // 这里引用刚才放进去的logo
