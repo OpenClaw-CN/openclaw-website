@@ -1,6 +1,10 @@
 ---
 layout: home
 
+title: OpenClaw CN 
+
+titleTemplate: false
+
 hero:
   name: "OpenClaw CN"
   text: "更安全、更懂中文的 Local Agent 实战平台"
