@@ -9,48 +9,57 @@ description: 3分钟在本地启动你的第一个 AI Agent
 
 ## 🛠️ 环境准备
 
-在开始之前，请确保你的电脑满足以下条件：
+OpenClaw CN 引入了最新的底层安全机制与构建工具，请确保环境满足以下要求：
 
-* **操作系统**：Windows / macOS / Linux
-* **Node.js**：**版本需 >= v22.0.0** ([下载 Node.js v22](https://nodejs.org/zh-cn))
+* **Node.js**：**必须 >= v22.0.0** ([下载 Node.js v22](https://nodejs.org/zh-cn))
+* **包管理器**：强制推荐使用 **pnpm** (npm 在处理依赖树时可能会卡死)
 * **Git**：用于下载代码 ([下载 Git](https://git-scm.com/))
 
-::: tip 💡 为什么要用 Node.js v22?
-OpenClaw 引入了最新的底层安全机制，必须配合 Node.js 22 或更高版本才能正常运行，旧版本会直接报错。
-:::
+### 安装 pnpm (如果你还没有)
+```bash
+npm install -g pnpm
+```
 
 ## 🚀 安装步骤
 
-### 1. 下载社区纯净版代码
-
-为了确保国内访问速度及代码安全性，请直接从我们的 Gitee 镜像仓库下载：
+### 1. 下载代码
+为了确保国内访问速度，请从 Gitee 镜像仓库下载：
 
 ```bash
-# 克隆仓库
 git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
-
-# 进入目录
 cd openclaw-cn
 ```
 
-### 2. 安装依赖 (使用国内源)
-
-我们推荐使用淘宝镜像源，以防止安装卡顿：
-
-```bash
-npm install --registry=https://registry.npmmirror.com
-```
-
-### 3. 启动 Agent
-
-安装完成后，直接运行以下命令启动：
+### 2. 配置国内加速 (关键！)
+在安装依赖前，务必设置 pnpm 镜像源，否则下载速度会很慢：
 
 ```bash
-npm run start
+pnpm config set registry https://registry.npmmirror.com/
 ```
 
-::: warning ⚠️ 首次启动注意
-首次启动时，程序会自动创建一个 `~/.openclaw` 配置目录。如果提示找不到 API Key，请参考下一章 [配置 DeepSeek 大脑](./config-deepseek.md)。
+### 3. 安装与构建
+OpenClaw 是一个现代化的全栈应用，首次运行需要编译前端 UI 和后端核心：
+
+```bash
+# 安装依赖 (飞快 🚀)
+pnpm install
+
+# 构建前端界面
+pnpm ui:build
+
+# 构建核心服务
+pnpm build
+```
+
+### 4. 启动初始化向导
+我们提供了交互式的初始化工具，帮你一键配置 DeepSeek：
+
+```bash
+pnpm openclaw onboard --install-daemon
+```
+
+::: tip 💡 提示
+在向导中，**Select Provider** 步骤请直接选择 `DeepSeek (Recommended for CN)`，系统会自动完成所有配置。
 :::
 
 ## 🎯 你的第一个任务
@@ -59,4 +68,4 @@ npm run start
 
 > **"请帮我在桌面上创建一个名为 hello_openclaw.txt 的文件，并在里面写入：大道至简，实战落地。"**
 
-Agent 将会自动规划任务、调用文件系统 API，并完成操作。去你的桌面看看，奇迹发生了吗？✨
+Agent 将会自动规划任务、调用文件系统 API，并完成操作。

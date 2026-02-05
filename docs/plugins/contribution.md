@@ -25,15 +25,15 @@ description: 如何参与 OpenClaw 中国社区的建设
 
 文档和代码一样重要。如果你发现文档有错别字、逻辑不清，或者想补充实战案例：
 
-* 直接点击文档页底部的 **"在 Gitee 上编辑此页"** 按钮。
+* 直接点击文档页底部的 **"在 GitHub 上编辑此页"** (或 Gitee) 按钮。
 * 或者直接修改 `docs/` 目录下的 Markdown 文件提交 PR。
 
 ### 3. 反馈问题 (Issue)
 
-遇到报错或有新想法？请直接在 [Issues 列表](https://gitee.com/OpenClaw-CN/openclaw-cn/issues) 中提出。
+遇到报错或有新想法？请直接在 [Gitee Issues 列表](https://gitee.com/OpenClaw-CN/openclaw-cn/issues) 中提出。
 提问时请注明：
 * 使用的操作系统 (Windows/Mac)
-* Node.js 版本
+* Node.js 版本 (必须 >= v22)
 * 报错截图或日志
 
 ## 📝 提交规范 (Commit Convention)
@@ -48,14 +48,15 @@ description: 如何参与 OpenClaw 中国社区的建设
 * `chore`: 构建工具或依赖变更
 
 **示例：**
-> `feat: 新增 DeepSeek V3 配置文件模板`
-> `fix: 修复 Windows 下文件路径转义错误`
+> `feat: 原生支持 DeepSeek V3 配置向导`
+> `fix: 修复 Windows 下 pnpm install 路径报错`
 
 ## 🛠️ 本地开发环境
 
-如果你想参与核心代码开发，请确保本地安装了推荐的工具链：
+如果你想参与核心代码开发，请确保本地安装了推荐的工具链。**请务必使用 pnpm，否则可能导致依赖树冲突。**
 
-* **pnpm** (推荐代替 npm): `npm install -g pnpm`
+* **Node.js**: `v22.0.0` 或更高
+* **pnpm**: `npm install -g pnpm`
 * **VS Code**: 推荐安装 `ESLint` 和 `Prettier` 插件。
 
 ---

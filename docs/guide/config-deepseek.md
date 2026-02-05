@@ -1,64 +1,65 @@
 ---
 title: 配置 DeepSeek
-description: 告别 Claude，零成本接入国产最强大脑
+description: 源码级原生支持，开箱即用
 ---
 
 # 🧠 配置 DeepSeek 大脑
 
-原版 OpenClaw 默认依赖 Claude，这在国内不仅昂贵且难以访问。
-作为中国社区，我们要将它的“大脑”替换为 **DeepSeek-V3** —— 它不仅便宜、中文能力强，而且完美兼容 OpenAI 协议。
+得益于 OpenClaw CN 的源码改造，**DeepSeek 现已成为系统的一级公民**。
+这意味着你不再需要繁琐地配置 `baseUrl` 或使用兼容模式，系统原生支持 DeepSeek-V3 / R1。
 
-## 1. 获取 API Key
+## 方法一：通过向导配置 (推荐)
 
-如果你还没有 Key，请前往 [DeepSeek 开放平台](https://platform.deepseek.com/) 申请。
+这是最简单的方法。在运行 `pnpm openclaw onboard` 初始化向导时：
 
-## 2. 修改配置文件
+1.  **Select Provider**: 在列表中直接选择 👉 **`DeepSeek (Recommended for CN)`**
+2.  **API Key**: 输入你的 DeepSeek Key (`sk-xxxxxxxx`)。
+3.  **Model**: 系统会自动为你配置 `deepseek-chat` (V3) 为默认模型。
 
-OpenClaw 的全局配置文件位于用户主目录下的 `~/.openclaw/openclaw.json`。
+---
 
-* **Windows**: `C:\Users\你的用户名\.openclaw\openclaw.json`
-* **macOS/Linux**: `/Users/你的用户名/.openclaw/openclaw.json`
+## 方法二：手动修改配置文件
 
-请使用文本编辑器打开该文件，并填入以下配置：
+如果你需要手动干预配置，请修改 `~/.openclaw/openclaw.json`。
+得益于原生集成，配置文件变得非常清爽：
 
-::: details 🔍 点击查看完整配置代码 (Copy Me)
 ```json
 {
+  "auth": {
+    "profiles": {
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key",
+        "apiKey": "sk-你的DeepSeek-Key"
+      }
+    }
+  },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "deepseek/deepseek-chat",
-        "embedding": "deepseek/deepseek-chat"
-      }
-    },
-    "models": {
-      "deepseek/deepseek-chat": {
-        "provider": "openai-compatible",
-        "model": "deepseek-chat",
-        "apiBase": "https://api.deepseek.com",
-        "apiKey": "sk-你的DeepSeek-Key",
-        "contextWindow": 64000
+        "primary": "deepseek/deepseek-chat"
       }
     }
   }
 }
 ```
-:::
 
-### 🔑 关键参数说明
+### 🔑 为什么原生支持更好？
 
-| 参数 | 值 | 说明 |
+| 特性 | 原生模式 (DeepSeek) | 旧版兼容模式 (OpenAI Compatible) |
 | :--- | :--- | :--- |
-| **provider** | `openai-compatible` | **关键！** 必须设为兼容模式，让系统通过通用协议调用。 |
-| **apiBase** | `https://api.deepseek.com` | DeepSeek 的官方接口地址。 |
-| **model** | `deepseek-chat` | 对应 DeepSeek-V3 模型。 |
-| **contextWindow** | `64000` | 上下文窗口限制，防止本地内存溢出。 |
+| **配置难度** | ⭐ 极简 (仅需 Key) | ⭐⭐⭐ 繁琐 (需填 BaseUrl, Model ID) |
+| **稳定性** | ✅ 官方 SDK 直连 | ⚠️ 可能受代理影响 |
+| **Token 计算** | ✅ 精准 | ⚠️ 可能有偏差 |
 
 ## 3. 验证连接
 
-保存文件后，重新运行 `npm run start`。
+配置完成后，重启服务：
+```bash
+pnpm start
+```
+
 在命令行输入：
+> **"你是谁？"**
 
-> **"你是谁？你使用的是什么模型？"**
-
-如果它回答 **"我是由 DeepSeek 驱动的智能助手"**，恭喜你！你已经成功完成“换脑手术”！🎉
+如果它回答 **"我是 OpenClaw 智能助手..."**，说明连接成功！

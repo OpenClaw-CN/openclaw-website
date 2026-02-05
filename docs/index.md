@@ -7,24 +7,43 @@ titleTemplate: false
 
 hero:
   name: "OpenClaw CN"
-  text: "更安全、更懂中文的 Local Agent 实战平台"
-  tagline: 纯净版镜像仓库 · 适配 DeepSeek/通义 · 飞书/企微插件生态
+  text: "DeepSeek 驱动的 Local Agent 基础设施"
+  tagline: 🇨🇳 源码级原生支持 DeepSeek | pnpm 极速构建 | 100% 数据安全
   image:
     src: /logo.png
     alt: OpenClaw Logo
   actions:
     - theme: brand
-      text: 🚀 立即开始实战
-      link: /guide/what-is-openclaw
+      text: ⚡ 3分钟快速开始
+      link: /guide/getting-started
     - theme: alt
-      text: ⭐ Gitee 源码下载
-      link: https://gitee.com/openclaw-cn/openclaw-cn
+      text: 🗺️ 查看发展路线图
+      link: /roadmap/
 
 features:
-  - title: 🧠 国产大脑适配
-    details: 告别 Claude 依赖。原生支持 DeepSeek-V3、Qwen (通义千问) 等国产顶尖大模型接入，Token 便宜，响应飞快。
-  - title: 🛡️ 安全审计镜像
-    details: 拒绝后门与风险。社区维护的 openclaw-cn-cn 版本经过代码审计，确保你的本地权限只听从你的指令。
-  - title: 🏢 企业级生态落地
-    details: 从玩具到工具。独家提供飞书 (Feishu) 与企业微信连接器，让 AI Agent 直接融入你的办公流。
+  - title: 🧠 国产大脑原生支持
+    details: 不再需要兼容模式。源码级内置 DeepSeek-V3 / Qwen 支持，开箱即用，配置向导一键搞定。
+  - title: ⚡ pnpm 极速构建
+    details: 针对国内网络环境深度优化。预配置 npmmirror 镜像源，依赖安装速度提升 10 倍，告别卡顿。
+  - title: 🛡️ 本地数据主权
+    details: 你的 Agent，听你的。基于 Node.js v22 的沙箱机制，配合社区代码审计，确保文件操作权限安全可控。
+  - title: 🏢 融入中国办公流
+    details: 不止是玩具。正在开发飞书 (Feishu) 与企业微信连接器，让 AI 员工直接“入职”你的 IM 软件。
+
 ---
+
+<div style="margin-top: 4rem; text-align: center; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
+  <h2>🔥 加入“燎原”计划</h2>
+  <p style="color: var(--vp-c-text-2); max-width: 600px; margin: 1rem auto;">
+    我们要寻找前 100 位核心贡献者。
+    如果你想第一时间体验 DeepSeek 适配版，或者想与我们一起从 0 到 1 建设生态，
+    欢迎加入 OpenClaw CN 早期共建群。
+  </p>
+  
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+    <div style="background: white; padding: 10px; border-radius: 8px;">
+      <img src="/wechat-group-qr.jpg" alt="微信扫码进群" width="150" height="150" style="display: block; background: #eee;">
+      <p style="color: black; font-size: 12px; margin-top: 5px; font-weight: bold;">扫码加入微信群</p>
+    </div>
+  </div>
+</div>
