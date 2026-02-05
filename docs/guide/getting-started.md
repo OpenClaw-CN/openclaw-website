@@ -22,19 +22,25 @@ npm install -g pnpm
 
 ## 🚀 安装步骤
 
-### 1. 下载代码
-为了确保国内访问速度，请从 Gitee 镜像仓库下载：
+### 1. 下载代码与版本选择
+为了确保国内访问速度，请从 Gitee 镜像仓库下载。
+为了获得最稳定的体验，推荐切换到最新的稳定版分支：
 
 ```bash
-git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
+# 1. 克隆仓库
+git clone [https://gitee.com/OpenClaw-CN/openclaw-cn.git](https://gitee.com/OpenClaw-CN/openclaw-cn.git)
 cd openclaw-cn
+
+# 2. (推荐) 切换到稳定版分支，例如：v2026.2.2-cn
+# 你可以通过 git tag 查看所有版本
+git checkout v2026.2.2-cn
 ```
 
 ### 2. 配置国内加速 (关键！)
 在安装依赖前，务必设置 pnpm 镜像源，否则下载速度会很慢：
 
 ```bash
-pnpm config set registry https://registry.npmmirror.com/
+pnpm config set registry [https://registry.npmmirror.com/](https://registry.npmmirror.com/)
 ```
 
 ### 3. 安装与构建
@@ -62,9 +68,24 @@ pnpm openclaw onboard --install-daemon
 在向导中，**Select Provider** 步骤请直接选择 `DeepSeek (Recommended for CN)`，系统会自动完成所有配置。
 :::
 
+### 5. 启动服务 (初始化完成后)
+初始化完成后，你可以通过以下命令再次启动网关服务（前提是网关已经关闭）：
+
+```bash
+# 启动网关 (Gateway)
+node openclaw.mjs gateway --port 18789 --verbose
+```
+
+如果你关闭了管理页面，可以通过以下命令再次打开：
+
+```bash
+# 打开管理面板 (Dashboard)
+node openclaw.mjs dashboard
+```
+
 ## 🎯 你的第一个任务
 
-启动成功后，你会看到一个交互式的命令行。试着给 Agent 下达第一个指令：
+启动成功后，进入管理面板或交互式命令行，试着给 Agent 下达第一个指令：
 
 > **"请帮我在桌面上创建一个名为 hello_openclaw.txt 的文件，并在里面写入：大道至简，实战落地。"**
 
