@@ -46,6 +46,12 @@ export default defineConfig({
             { text: '保姆级安装教程', link: '/guide/getting-started' },
             { text: '配置 DeepSeek 大脑', link: '/guide/config-deepseek' }
           ]
+        },
+		{
+          text: '常见问题',
+          items: [
+            { text: 'FAQ', link: '/guide/faq' } // 新增这一行
+          ]
         }
       ],
 
