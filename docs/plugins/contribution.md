@@ -61,4 +61,18 @@ description: 如何参与 OpenClaw 中国社区的建设
 
 ---
 
-**加入我们，一起构建最懂中文环境的 AI Agent 基础设施！** 🚀
+<div style="margin-top: 4rem; padding: 2rem; border: 1px solid #fed7aa; background: linear-gradient(to bottom right, #fff7ed, #ffedd5); border-radius: 12px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+  <h2 style="margin-top: 0; border: none; color: #c2410c;">🔥 加入 OpenClaw 核心贡献群</h2>
+  <p style="color: #4b5563; max-width: 600px; margin: 1rem auto; line-height: 1.6;">
+    我们要寻找前 100 位核心贡献者。
+    如果你想第一时间获取开发动态，或者在贡献过程中遇到任何问题，
+    欢迎扫码加入我们的开发者共建群。
+  </p>
+  
+  <div style="display: flex; justify-content: center; margin-top: 24px;">
+    <div style="background: white; padding: 12px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid #eee;">
+      <img src="/wechat-group-qr.jpg" alt="微信扫码进群" width="160" height="160" style="display: block;">
+      <p style="color: #666; font-size: 13px; margin: 8px 0 0 0; font-weight: 500;">📲 扫码加入共建群</p>
+    </div>
+  </div>
+</div>
