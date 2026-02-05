@@ -28,7 +28,7 @@ npm install -g pnpm
 
 ```bash
 # 1. 克隆仓库
-git clone [https://gitee.com/OpenClaw-CN/openclaw-cn.git](https://gitee.com/OpenClaw-CN/openclaw-cn.git)
+git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
 cd openclaw-cn
 
 # 2. (推荐) 切换到稳定版分支，例如：v2026.2.2-cn
@@ -40,7 +40,7 @@ git checkout v2026.2.2-cn
 在安装依赖前，务必设置 pnpm 镜像源，否则下载速度会很慢：
 
 ```bash
-pnpm config set registry [https://registry.npmmirror.com/](https://registry.npmmirror.com/)
+pnpm config set registry https://registry.npmmirror.com/
 ```
 
 ### 3. 安装与构建
