@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: OpenClaw CN 
+title: OpenClaw中国社区 
 
 titleTemplate: false
 
