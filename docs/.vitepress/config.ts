@@ -27,7 +27,8 @@ export default defineConfig({
         {
           text: '关于 OpenClaw CN',
           items: [
-            { text: '源起：72小时诞生记', link: '/about/' } // 对应 /about/index.md
+            { text: '源起：72小时诞生记', link: '/about/' }, // 对应 /about/index.md
+			{ text: '发展历程', link: '/about/history' }
           ]
         }
       ],

@@ -20,6 +20,22 @@
     AI 技术迭代极快。源码部署让您可以通过简单的 `git pull` 命令，瞬间同步我们最新的功能修复和模型适配（如最新的 DeepSeek 优化），无需等待漫长的发版周期。
 :::
 
+::: details Q: Windows 下运行构建命令报错 “'bash' 不是内部或外部命令”？
+**A: 这是因为构建脚本依赖 Linux 环境命令，请使用 Git Bash 运行。**
+
+![Windows构建报错示例](/win-error.png)
+
+OpenClaw CN 的构建流程中包含了一些 Shell 脚本（如 `.sh` 文件），Windows 默认的 CMD 或 PowerShell 终端无法直接执行这些脚本。
+
+**解决方法：**
+
+1.  **推荐方式：使用 Git Bash**
+    在项目根目录点击右键，选择 **Git Bash Here**。在弹出的 Git Bash 窗口中再次运行构建命令（如 `pnpm build`）即可。Git Bash 自带了模拟 Linux 环境，可以完美兼容这些脚本。
+
+2.  **替代方式：配置环境变量**
+    如果您坚持使用 PowerShell，需要将 Git 安装目录下的 `bin` 文件夹（包含 `bash.exe`）添加到系统的 Path 环境变量中，但这通常比第一种方法更繁琐。
+:::
+
 ---
 
 ## 版本与更新
