@@ -11,29 +11,29 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     
-    // 顶部导航栏 (一级菜单独立目录)
+    // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于我们', link: '/about/' },        // 指向 /about/index.md
+      { text: '关于我们', link: '/about/' },
       { text: '实战指南', link: '/guide/getting-started' },
-      { text: '路线图', link: '/roadmap/' },        // 指向 /roadmap/index.md
-      { text: '插件市场', link: '/plugins/' }       // 指向 /plugins/index.md
+      { text: '路线图', link: '/roadmap/' },
+      { text: '插件市场', link: '/plugins/' }
     ],
 
-    // 侧边栏 (各版块独立)
+    // 侧边栏配置
     sidebar: {
-      // 1. 关于我们 (独立目录)
+      // 1. 关于我们
       '/about/': [
         {
           text: '关于 OpenClaw CN',
           items: [
-            { text: '源起：72小时诞生记', link: '/about/' }, // 对应 /about/index.md
-			{ text: '发展历程', link: '/about/history' }
+            { text: '源起：72小时诞生记', link: '/about/' },
+            { text: '发展历程', link: '/about/history' }
           ]
         }
       ],
 
-      // 2. 实战指南 (保持原样)
+      // 2. 实战指南
       '/guide/': [
         {
           text: '开始之前',
@@ -48,31 +48,32 @@ export default defineConfig({
             { text: '配置 DeepSeek 大脑', link: '/guide/config-deepseek' }
           ]
         },
-		{
+        {
           text: '常见问题',
           items: [
-            { text: 'FAQ', link: '/guide/faq' } // 新增这一行
+            { text: 'FAQ', link: '/guide/faq' }
           ]
         }
       ],
 
-      // 3. 路线图 (独立目录)
+      // 3. 路线图
       '/roadmap/': [
         {
           text: '未来规划',
           items: [
-            { text: '2026 Q1 路线图', link: '/roadmap/' } // 对应 /roadmap/index.md
+            { text: '2026 Q1 路线图', link: '/roadmap/' },
+            { text: '🔥 当前悬赏任务', link: '/roadmap/current-tasks' } // ✨ 悬赏任务入口
           ]
         }
       ],
 
-      // 4. 插件生态 (包含贡献指南)
+      // 4. 插件生态
       '/plugins/': [
         {
           text: '生态中心',
           items: [
             { text: '插件市场首页', link: '/plugins/' },
-            { text: '如何开发插件 (贡献指南)', link: '/plugins/contribution' } // 移到了这里
+            { text: '如何开发插件 (贡献指南)', link: '/plugins/contribution' }
           ]
         }
       ]
