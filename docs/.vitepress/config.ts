@@ -45,7 +45,8 @@ export default defineConfig({
           text: '快速上手',
           items: [
             { text: '保姆级安装教程', link: '/guide/getting-started' },
-            { text: '配置 DeepSeek 大脑', link: '/guide/config-deepseek' }
+            { text: '配置 DeepSeek 大脑', link: '/guide/config-deepseek' },
+			{ text: '如何卸载', link: '/guide/uninstall' } // ✨ 新增入口
           ]
         },
         {
