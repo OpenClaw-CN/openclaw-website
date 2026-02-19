@@ -1,16 +1,51 @@
 import { defineConfig } from 'vitepress'
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+
+// 全站节日主题：修改此文件后重新构建/部署即可生效
+const currentDir = dirname(fileURLToPath(import.meta.url))
+const themeConfigPath = join(currentDir, 'theme-config.json')
+const VALID_THEMES = ['default', 'spring-festival', 'dragon-boat', 'mid-autumn', 'national-day']
+
+function loadFestivalTheme(): string {
+  try {
+    const raw = readFileSync(themeConfigPath, 'utf-8')
+    const data = JSON.parse(raw) as { festivalTheme?: string }
+    const t = data?.festivalTheme
+    return typeof t === 'string' && VALID_THEMES.includes(t) ? t : 'default'
+  } catch {
+    return 'default'
+  }
+}
+
+const festivalTheme = loadFestivalTheme()
+
+// 首屏脚本：先看管理员预览(sessionStorage)，再用配置文件主题
+const themeScript = `(function(){
+  var ids=['default','spring-festival','dragon-boat','mid-autumn','national-day'];
+  var preview=sessionStorage.getItem('openclaw-theme-preview');
+  var t=(preview&&ids.indexOf(preview)>=0)?preview:(window.__OPENCLAW_DEFAULT_THEME__&&ids.indexOf(window.__OPENCLAW_DEFAULT_THEME__)>=0?window.__OPENCLAW_DEFAULT_THEME__:'default');
+  var r=document.documentElement;
+  ids.forEach(function(id){r.classList.remove('theme-'+id);});
+  r.classList.add('theme-'+t);
+})();`
+
+const defaultThemeScript = `window.__OPENCLAW_DEFAULT_THEME__="${festivalTheme.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}";`
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   title: "OpenClaw CN",
   description: "更懂中文环境的 Local Agent 实战社区",
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['script', {}, defaultThemeScript],
+    ['script', {}, themeScript],
   ],
   cleanUrls: true,
   themeConfig: {
     logo: '/logo.png',
-    
+
     // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
@@ -83,7 +118,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenClaw-CN/openclaw-cn' }
     ],
-    
+
     footer: {
       message: '让 AI Agent 在中国土地上生根发芽 | 基于 MIT 许可发布',
       copyright: 'Copyright © 2026 OpenClaw CN'

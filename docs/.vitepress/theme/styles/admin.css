@@ -1,0 +1,129 @@
+/* 管理员主题管理页 */
+.admin-theme-page {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+}
+
+.admin-theme-page h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.admin-theme-hint {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.admin-theme-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-theme-input {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+}
+
+.admin-theme-input:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-2);
+}
+
+.admin-theme-submit {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vp-button-brand-text);
+  background: var(--vp-c-brand-3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-theme-submit:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.admin-theme-error {
+  margin-top: 12px;
+  color: var(--vp-c-danger-1);
+  font-size: 0.9rem;
+}
+
+.admin-theme-switcher {
+  margin-top: 1rem;
+  overflow: visible;
+}
+
+.admin-theme-page {
+  overflow: visible;
+}
+
+.admin-theme-switcher .theme-switcher-wrap {
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  overflow: visible;
+}
+
+.admin-theme-switcher .theme-switcher-btn {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.admin-theme-config-hint {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-alt);
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.admin-theme-config-hint code {
+  padding: 0.15em 0.4em;
+  font-size: 11px;
+  background: var(--vp-c-bg-soft);
+  border-radius: 4px;
+}
+
+.admin-theme-reset {
+  margin-top: 1rem;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.admin-theme-reset:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-2);
+}
+
+/* 管理员页：下拉在按钮下方展开，避免被文档区域裁剪 */
+.admin-theme-switcher .theme-switcher-dropdown {
+  bottom: auto;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  margin-top: 8px;
+  z-index: 200;
+}

@@ -1,0 +1,139 @@
+/* 节日换肤切换器：侧边栏底部 */
+.theme-switcher-wrap {
+  position: relative;
+  margin-top: auto;
+  padding: 12px 16px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.theme-switcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.theme-switcher-btn:hover {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-2);
+}
+
+.theme-switcher-icon {
+  font-size: 16px;
+}
+
+.theme-switcher-label {
+  flex: 1;
+  text-align: left;
+}
+
+.theme-switcher-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 16px;
+  right: 16px;
+  margin-bottom: 8px;
+  padding: 6px;
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  box-shadow: var(--vp-shadow-3);
+  z-index: 100;
+}
+
+.theme-switcher-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--vp-c-text-1);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.theme-switcher-option:hover {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.theme-switcher-option.active {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* 内联模式：一排按钮，无下拉（用于 /admin） */
+.theme-switcher--inline .theme-switcher-current {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+}
+
+.theme-switcher-remote-error {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--vp-c-danger-1);
+}
+
+.theme-switcher--inline .theme-switcher-options-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.theme-switcher--inline .theme-switcher-option--block {
+  padding: 10px 18px;
+  font-size: 14px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.theme-switcher--inline .theme-switcher-option--block:hover {
+  background: var(--vp-c-bg-soft);
+  border-color: var(--vp-c-brand-2);
+  color: var(--vp-c-brand-1);
+}
+
+.theme-switcher--inline .theme-switcher-option--block.active {
+  background: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-2);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* 首页 hero 下方：内联展示 */
+.theme-switcher--hero.theme-switcher-wrap {
+  margin-top: 1rem;
+  padding: 0;
+  border: none;
+}
+
+.theme-switcher--hero .theme-switcher-btn {
+  width: auto;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+.theme-switcher--hero .theme-switcher-dropdown {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
