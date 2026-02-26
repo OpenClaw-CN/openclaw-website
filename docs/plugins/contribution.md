@@ -58,6 +58,7 @@ description: 如何参与 OpenClaw 中国社区的建设
 
 **示例：**
 > `feat: 原生支持 DeepSeek V3 配置向导`
+> 
 > `fix: 修复 Windows 下 pnpm install 路径报错`
 
 ## 🛠️ 本地开发环境
