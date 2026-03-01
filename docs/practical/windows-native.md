@@ -1,5 +1,7 @@
 # Windows 原生实战
 
+<span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：努力向前</span>
+
 这篇文章我就只做一件事：把 Windows 上安装 openclaw-cn 这件事讲清楚、讲顺手。我把安装路径分成两条：一条是更稳妥的 WSL2（更接近 Linux 的官方环境，后续坑更少），另一条是原生 Windows（更快上手，但对 PowerShell 和系统环境更挑剔）。
 
 今天主要讲原生 Windows 安装过程。

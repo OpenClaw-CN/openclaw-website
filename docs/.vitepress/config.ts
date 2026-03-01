@@ -152,6 +152,7 @@ export default defineConfig({
         {
           text: '实战指南',
           items: [
+            { text: '实战指南首页', link: '/practical/' },
             { text: 'windows原生源码安装', link: '/practical/windows-native' },
             { text: 'Linux 源码安装', link: '/practical/linux_practical' }
           ]

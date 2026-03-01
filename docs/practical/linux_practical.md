@@ -1,5 +1,7 @@
 # 安装
 
+<span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：在路上</span>
+
 ## linux源码安装
 ::: warning 注意事项
 - 演示操作系统：Ubuntu 22.04 LTS
