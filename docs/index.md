@@ -47,3 +47,7 @@ features:
     </div>
   </div>
 </div>
+
+<div style="margin-top: 1rem; margin-bottom: 1rem; padding: 0.5rem 0; text-align: center;">
+  <AdGlobalFooterLink />
+</div>

@@ -1,10 +1,12 @@
 import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import AdminThemePage from './AdminThemePage.vue'
+import AdGlobalFooterLink from './AdGlobalFooterLink.vue'
 import './styles/vars.css'
 import './styles/themes.css'
 import './styles/theme-switcher.css'
 import './styles/admin.css'
+import './styles/ads.css'
 
 export { getActiveTheme, setTheme, getAutoFestivalTheme, type FestivalThemeId } from './util'
 
@@ -13,5 +15,6 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.component('AdminThemePage', AdminThemePage)
+    app.component('AdGlobalFooterLink', AdGlobalFooterLink)
   },
 }

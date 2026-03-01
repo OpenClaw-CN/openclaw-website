@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "node scripts/copy-ads.js && vitepress build docs",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {

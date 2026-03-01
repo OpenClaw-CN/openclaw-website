@@ -127,3 +127,202 @@
   margin-top: 8px;
   z-index: 200;
 }
+
+/* ========== 广告管理 ========== */
+.admin-theme-page {
+  max-width: 720px;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.admin-tab {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+
+.admin-tab:hover {
+  color: var(--vp-c-text-1);
+}
+
+.admin-tab.active {
+  color: var(--vp-c-brand-1);
+  border-bottom-color: var(--vp-c-brand-2);
+  font-weight: 500;
+}
+
+.admin-ads-manager h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.admin-ads-manager h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.admin-ads-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.admin-ads-btn {
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--vp-c-text-1, #213547);
+  background: var(--vp-c-bg-soft, #f2f4f7);
+  border: 1px solid var(--vp-c-border, #dce0e6);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.admin-ads-btn:hover {
+  color: var(--vp-c-text-1, #213547);
+  border-color: var(--vp-c-brand-2, #4763e8);
+  background: var(--vp-c-bg-soft, #e8ecf1);
+}
+
+.admin-ads-btn--primary {
+  color: var(--vp-button-brand-text, #fff);
+  background: var(--vp-c-brand-3, #4763e8);
+  border-color: var(--vp-c-brand-3, #4763e8);
+}
+
+.admin-ads-btn--primary:hover {
+  background: var(--vp-c-brand-2, #5b73e8);
+  border-color: var(--vp-c-brand-2, #5b73e8);
+  color: var(--vp-button-brand-text, #fff);
+}
+
+.dark .admin-ads-btn {
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  border-color: var(--vp-c-border);
+}
+.dark .admin-ads-btn--primary {
+  color: var(--vp-button-brand-text, #fff);
+  background: var(--vp-c-brand-3);
+  border-color: var(--vp-c-brand-3);
+}
+
+.admin-ads-btn--small {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.admin-ads-btn--danger:hover {
+  border-color: var(--vp-c-danger-1);
+  color: var(--vp-c-danger-1);
+}
+
+.admin-ads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.admin-ads-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--vp-c-bg-alt);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.admin-ads-item-title {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.admin-ads-item-meta {
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  flex: 1;
+}
+
+.admin-ads-form-wrap {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.admin-ads-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-ads-form label {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin-top: 8px;
+}
+
+.admin-ads-form label:first-of-type {
+  margin-top: 0;
+}
+
+.admin-ads-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 6px;
+}
+
+.admin-ads-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.admin-ads-check input {
+  margin: 0;
+}
+
+.admin-ads-image-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-ads-image-row .admin-theme-input {
+  flex: 1;
+}
+
+.admin-ads-file {
+  font-size: 12px;
+  max-width: 160px;
+}
+
+.admin-ads-hint {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  margin: 0;
+}
+
+.admin-ads-form-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}

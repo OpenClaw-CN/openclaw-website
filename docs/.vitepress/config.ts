@@ -6,6 +6,8 @@ import { dirname, join } from 'path'
 // 全站节日主题：修改此文件后重新构建/部署即可生效
 const currentDir = dirname(fileURLToPath(import.meta.url))
 const themeConfigPath = join(currentDir, 'theme-config.json')
+const adminConfigPath = join(currentDir, 'admin-config.json')
+const adsPath = join(currentDir, '..', '..', 'ads.json')
 const VALID_THEMES = ['default', 'spring-festival', 'dragon-boat', 'mid-autumn', 'national-day']
 
 function loadFestivalTheme(): string {
@@ -19,7 +21,32 @@ function loadFestivalTheme(): string {
   }
 }
 
+function loadAdminConfig(): { adminUsername: string; adminPassword: string } | null {
+  try {
+    const raw = readFileSync(adminConfigPath, 'utf-8')
+    const data = JSON.parse(raw) as { adminUsername?: string; adminPassword?: string }
+    if (typeof data?.adminUsername === 'string' && typeof data?.adminPassword === 'string') {
+      return { adminUsername: data.adminUsername, adminPassword: data.adminPassword }
+    }
+  } catch {
+    // ignore
+  }
+  return null
+}
+
+function loadAds(): { activeAds?: unknown[] } {
+  try {
+    const raw = readFileSync(adsPath, 'utf-8')
+    const data = JSON.parse(raw) as { activeAds?: unknown[] }
+    return Array.isArray(data?.activeAds) ? data : { activeAds: [] }
+  } catch {
+    return { activeAds: [] }
+  }
+}
+
 const festivalTheme = loadFestivalTheme()
+const adminConfig = loadAdminConfig()
+const adsData = loadAds()
 
 // 首屏脚本：先看管理员预览(sessionStorage)，再用配置文件主题
 const themeScript = `(function(){
@@ -32,6 +59,10 @@ const themeScript = `(function(){
 })();`
 
 const defaultThemeScript = `window.__OPENCLAW_DEFAULT_THEME__="${festivalTheme.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}";`
+const adminScript = adminConfig
+  ? `window.__OPENCLAW_ADMIN__=${JSON.stringify(adminConfig)};`
+  : ''
+const adsScript = `window.__OPENCLAW_ADS__=${JSON.stringify(adsData)};`
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
@@ -41,6 +72,8 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['script', {}, defaultThemeScript],
     ['script', {}, themeScript],
+    ...(adminScript ? [['script', {}, adminScript]] : []),
+    ['script', {}, adsScript],
   ],
   cleanUrls: true,
   themeConfig: {
@@ -50,7 +83,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我们', link: '/about/' },
-      { text: '实战指南', link: '/guide/getting-started' },
+      { text: '快速开始', link: '/guide/getting-started' },
+	  { text: '实战指南', link: '/practical/' },
       { text: '路线图', link: '/roadmap/' },
       { text: '插件市场', link: '/plugins/' }
     ],
@@ -68,7 +102,6 @@ export default defineConfig({
         }
       ],
 
-      // 2. 实战指南
       '/guide/': [
         {
           text: '开始之前',
@@ -110,6 +143,17 @@ export default defineConfig({
           items: [
             { text: '插件市场首页', link: '/plugins/' },
             { text: '如何开发插件 (贡献指南)', link: '/plugins/contribution' }
+          ]
+        }
+      ],
+
+      // 5. 实战指南
+      '/practical/': [
+        {
+          text: '实战指南',
+          items: [
+            { text: 'windows原生源码安装', link: '/practical/windows-native' },
+            { text: 'Linux 源码安装', link: '/practical/linux_practical' }
           ]
         }
       ]

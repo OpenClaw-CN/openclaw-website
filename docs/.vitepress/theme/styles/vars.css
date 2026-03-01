@@ -2,3 +2,9 @@
 :root {
   /* 保持 VitePress 默认，节日主题在 themes.css 中覆盖 */
 }
+
+/* 友情链接紧贴分割线上方（首页等） */
+.VPFooter,
+footer.vp-footer {
+  margin-top: 0 !important;
+}
