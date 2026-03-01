@@ -1,20 +1,8 @@
 {
   "activeAds": [
     {
-      "id": "crmeb-001",
-      "advertiser": "CRMEB",
-      "position": [
-        "SidebarBottom"
-      ],
-      "imageUrl": "https://automation.vuejs.org/images/crmeb.svg?v2",
-      "targetUrl": "https://gitee.com/ZhongBangKeJi/CRMEB",
-      "startDate": "2026-01-01",
-      "endDate": "2027-02-28",
-      "tier": "gold"
-    },
-    {
       "id": "ad-1772076508426",
-      "advertiser": "test",
+      "advertiser": "铂金赞助Logo",
       "position": [
         "HomeSponsorWall"
       ],
@@ -22,32 +10,6 @@
       "targetUrl": "https://gitee.com/ZhongBangKeJi/CRMEB",
       "startDate": "2026-02-26",
       "endDate": "2027-02-28",
-      "tier": "gold"
-    },
-    {
-      "id": "ad-1772077135753",
-      "advertiser": "waibutupian",
-      "slogan": "这个好",
-      "position": [
-        "SidebarRightSticky"
-      ],
-      "imageUrl": "https://gitee.com/OpenClaw-CN/openclaw-cn/raw/main/wechat-group-qr.jpg",
-      "targetUrl": "https://gitee.com/OpenClaw-CN/openclaw-cn",
-      "startDate": "2026-02-26",
-      "endDate": "2026-02-28",
-      "complianceTag": "特别赞助",
-      "tier": "gold"
-    },
-    {
-      "id": "ad-1772077973056",
-      "advertiser": "开源商城",
-      "position": [
-        "GlobalFooterLink"
-      ],
-      "targetUrl": "https://gitee.com/OpenClaw-CN/openclaw-cn",
-      "startDate": "2026-02-26",
-      "endDate": "2026-02-28",
-      "complianceTag": "友情连接",
       "tier": "gold"
     }
   ]
