@@ -13,6 +13,19 @@
           "value": "inline"
         }
       ]
+    },
+    {
+      "source": "/install-cn.ps1",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
     }
   ]
 }
