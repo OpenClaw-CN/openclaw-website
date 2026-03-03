@@ -15,6 +15,7 @@ description: 按环境手把手安装与配置 OpenClaw，从零到跑通
 |----------|------|
 | [Windows 原生源码安装](/practical/windows-native) | 不装 WSL，直接在 Windows 下用 PowerShell + Git Bash 安装 |
 | [Linux 源码安装](/practical/linux_practical) | Ubuntu 等环境下从源码安装、构建与启动 |
+| [Gateway 局域网配置](/practical/tutorial-gateway-bind) | Gateway 局域网绑定与访问配置 |
 
 ## 📮 招募实战稿
 
@@ -48,6 +49,10 @@ description: 按环境手把手安装与配置 OpenClaw，从零到跑通
   </a>
   <a href="/practical/windows-native" class="contributor-card" style="display: block; padding: 1.25rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-divider); border-radius: 8px; text-decoration: none; color: var(--vp-c-text-1); transition: border-color 0.2s, background 0.2s;">
     <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem;">Windows 原生源码安装</div>
+    <div style="font-size: 0.8125rem; color: var(--vp-c-text-2);">贡献者：努力向前</div>
+  </a>
+  <a href="/practical/tutorial-gateway-bind" class="contributor-card" style="display: block; padding: 1.25rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-divider); border-radius: 8px; text-decoration: none; color: var(--vp-c-text-1); transition: border-color 0.2s, background 0.2s;">
+    <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem;">Gateway 局域网配置</div>
     <div style="font-size: 0.8125rem; color: var(--vp-c-text-2);">贡献者：努力向前</div>
   </a>
 </div>

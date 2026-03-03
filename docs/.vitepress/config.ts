@@ -154,7 +154,8 @@ export default defineConfig({
           items: [
             { text: '实战指南首页', link: '/practical/' },
             { text: 'windows原生源码安装', link: '/practical/windows-native' },
-            { text: 'Linux 源码安装', link: '/practical/linux_practical' }
+            { text: 'Linux 源码安装', link: '/practical/linux_practical' },
+            { text: 'Gateway局域网配置', link: '/practical/tutorial-gateway-bind' }
           ]
         }
       ]
