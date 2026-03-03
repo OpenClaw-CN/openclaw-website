@@ -161,7 +161,14 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/OpenClaw-CN/openclaw-cn' }
+      { icon: 'github', link: 'https://github.com/OpenClaw-CN/openclaw-cn' },
+      {
+        icon: {
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><image width="24" height="24" href="/gitee.png"/></svg>'
+        },
+        link: 'https://gitee.com/OpenClaw-CN/openclaw-cn',
+        ariaLabel: 'Gitee 仓库'
+      }
     ],
 
     footer: {
