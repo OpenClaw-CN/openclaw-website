@@ -81,15 +81,15 @@
 }
 
 .ad-sidebar-bottom .ad-sidebar-unit {
-  max-width: 220px;
+  max-width: 240px;
 }
 
 .ad-sidebar-bottom .ad-sidebar-unit__body {
-  min-height: 88px;
+  min-height: 130px;
 }
 
 .ad-sidebar-bottom .ad-sidebar-unit__media img {
-  max-height: 72px;
+  max-height: 120px;
 }
 
 .ad-sidebar-right .ad-sidebar-unit {

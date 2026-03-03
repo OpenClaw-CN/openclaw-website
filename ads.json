@@ -7,8 +7,31 @@
         "HomeSponsorWall"
       ],
       "imageUrl": "/ads/crmeb_logo.png",
-      "targetUrl": "https://gitee.com/ZhongBangKeJi/CRMEB",
+      "targetUrl": "http://github.crmeb.net/u/openclaw",
       "startDate": "2026-02-26",
+      "endDate": "2027-02-28",
+      "tier": "gold"
+    },
+    {
+      "id": "ad-1772503231994",
+      "advertiser": "crmeb左侧",
+      "position": [
+        "SidebarBottom"
+      ],
+      "imageUrl": "/ads/CRMEB_lift.jpg",
+      "targetUrl": "http://github.crmeb.net/u/openclaw",
+      "startDate": "2026-03-03",
+      "endDate": "2027-02-28",
+      "tier": "gold"
+    },
+    {
+      "id": "ad-1772503514855",
+      "advertiser": "CRMEB商城系统",
+      "position": [
+        "GlobalFooterLink"
+      ],
+      "targetUrl": "https://www.crmeb.com/",
+      "startDate": "2026-03-03",
       "endDate": "2027-02-28",
       "tier": "gold"
     }
