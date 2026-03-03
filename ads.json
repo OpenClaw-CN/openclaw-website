@@ -7,7 +7,7 @@
         "HomeSponsorWall"
       ],
       "imageUrl": "/ads/crmeb_logo.png",
-      "targetUrl": "http://github.crmeb.net/u/openclaw",
+      "targetUrl": "https://github.crmeb.net/u/openclaw",
       "startDate": "2026-02-26",
       "endDate": "2027-02-28",
       "tier": "gold"
@@ -19,7 +19,7 @@
         "SidebarBottom"
       ],
       "imageUrl": "/ads/CRMEB_lift.jpg",
-      "targetUrl": "http://github.crmeb.net/u/openclaw",
+      "targetUrl": "https://github.crmeb.net/u/openclaw",
       "startDate": "2026-03-03",
       "endDate": "2027-02-28",
       "tier": "gold"
