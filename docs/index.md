@@ -37,12 +37,23 @@ features:
   <p style="color: var(--vp-c-text-2); max-width: 600px; margin: 1rem auto;">
     我们要寻找前 100 位核心贡献者。
     如果你想第一时间体验 DeepSeek 适配版，或者想与我们一起从 0 到 1 建设生态，
-    欢迎加入 OpenClaw CN 早期共建群。
+    欢迎加入 OpenClaw CN 早期共建群。可按使用平台选择对应群。
   </p>
   
-  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-    <div style="background: white; padding: 10px; border-radius: 8px;">
-      <img src="/wechat-group-qr.jpg" alt="微信扫码进群" width="150" height="150" style="display: block; background: #eee;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 24px;">
+    <div style="background: white; padding: 12px; border-radius: 8px;">
+      <p style="color: black; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">Windows</p>
+      <img src="/wechat-group-win.jpg" alt="OpenClaw 中国社区 Windows 群" width="160" height="160" style="display: block; background: #eee;">
+      <p style="color: black; font-size: 12px; margin-top: 5px; font-weight: bold;">扫码加入微信群</p>
+    </div>
+    <div style="background: white; padding: 12px; border-radius: 8px;">
+      <p style="color: black; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">Linux</p>
+      <img src="/wechat-group-linux.jpg" alt="OpenClaw 中国社区 Linux 群" width="160" height="160" style="display: block; background: #eee;">
+      <p style="color: black; font-size: 12px; margin-top: 5px; font-weight: bold;">扫码加入微信群</p>
+    </div>
+    <div style="background: white; padding: 12px; border-radius: 8px;">
+      <p style="color: black; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">macOS</p>
+      <img src="/wechat-group-mac.jpg" alt="OpenClaw 中国社区 macOS 群" width="160" height="160" style="display: block; background: #eee;">
       <p style="color: black; font-size: 12px; margin-top: 5px; font-weight: bold;">扫码加入微信群</p>
     </div>
   </div>

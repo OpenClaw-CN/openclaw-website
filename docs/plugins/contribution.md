@@ -75,12 +75,23 @@ description: 如何参与 OpenClaw 中国社区的建设
   <p style="color: #4b5563; max-width: 600px; margin: 1rem auto; line-height: 1.6;">
     我们要寻找前 100 位核心贡献者。
     如果你想第一时间获取开发动态，或者在贡献过程中遇到任何问题，
-    欢迎扫码加入我们的开发者共建群。
+    欢迎扫码加入我们的开发者共建群。可按使用平台选择对应群。
   </p>
   
-  <div style="display: flex; justify-content: center; margin-top: 24px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 24px;">
     <div style="background: white; padding: 12px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid #eee;">
-      <img src="/wechat-group-qr.jpg" alt="微信扫码进群" width="160" height="160" style="display: block;">
+      <p style="color: #333; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">Windows</p>
+      <img src="/wechat-group-win.jpg" alt="OpenClaw 中国社区 Windows 群" width="160" height="160" style="display: block;">
+      <p style="color: #666; font-size: 13px; margin: 8px 0 0 0; font-weight: 500;">📲 扫码加入共建群</p>
+    </div>
+    <div style="background: white; padding: 12px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid #eee;">
+      <p style="color: #333; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">Linux</p>
+      <img src="/wechat-group-linux.jpg" alt="OpenClaw 中国社区 Linux 群" width="160" height="160" style="display: block;">
+      <p style="color: #666; font-size: 13px; margin: 8px 0 0 0; font-weight: 500;">📲 扫码加入共建群</p>
+    </div>
+    <div style="background: white; padding: 12px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid #eee;">
+      <p style="color: #333; font-size: 14px; margin: 0 0 8px 0; font-weight: bold;">macOS</p>
+      <img src="/wechat-group-mac.jpg" alt="OpenClaw 中国社区 macOS 群" width="160" height="160" style="display: block;">
       <p style="color: #666; font-size: 13px; margin: 8px 0 0 0; font-weight: 500;">📲 扫码加入共建群</p>
     </div>
   </div>
