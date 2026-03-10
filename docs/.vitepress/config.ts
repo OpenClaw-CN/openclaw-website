@@ -66,7 +66,7 @@ const adsScript = `window.__OPENCLAW_ADS__=${JSON.stringify(adsData)};`
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
-  title: "OpenClaw CN",
+  title: "OpenClaw 中国社区",
   description: "更懂中文环境的 Local Agent 实战社区",
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
