@@ -82,11 +82,11 @@ export default defineConfig({
     // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于我们', link: '/about/' },
       { text: '快速开始', link: '/guide/getting-started' },
 	  { text: '实战指南', link: '/practical/' },
       { text: '路线图', link: '/roadmap/' },
-      { text: '插件市场', link: '/plugins/' }
+      { text: '插件市场', link: '/plugins/' },
+      { text: '关于我们', link: '/about/' }
     ],
 
     // 侧边栏配置
