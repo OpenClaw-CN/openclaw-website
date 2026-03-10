@@ -34,11 +34,12 @@ features:
 
 <div style="margin-top: 4rem; text-align: center; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
   <h2>🔥 加入“燎原”计划</h2>
-  <p style="color: var(--vp-c-text-2); max-width: 600px; margin: 1rem auto;">
-    我们要寻找前 100 位核心贡献者。
-    如果你想第一时间体验 DeepSeek 适配版，或者想与我们一起从 0 到 1 建设生态，
-    欢迎加入 OpenClaw CN 早期共建群。可按使用平台选择对应群。
-  </p>
+  <div style="max-width: 640px; margin: 1rem auto 1.5rem; padding: 1rem 1.25rem; background: var(--vp-c-bg-alt); border-left: 4px solid var(--vp-c-brand-2); border-radius: 0 8px 8px 0; text-align: left;">
+    <p style="margin: 0 0 0.5rem 0; color: var(--vp-c-text-1); font-weight: 600; font-size: 1rem;">📢 关于微信交流群限流的说明</p>
+    <p style="margin: 0; color: var(--vp-c-text-2); font-size: 14px; line-height: 1.6;">
+      随着 OpenClaw CN 社区的快速发展，每日入群人数激增。为了提供更优质的开源互助环境，避免群消息泛滥，每天晚上 8 点将定时释放新的交流群二维码，各系统每日限额 1 个群。如遇二维码提示“群已满”，请于次日晚 8 点再来扫码加入。
+    </p>
+  </div>
   
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 24px;">
     <div style="background: white; padding: 12px; border-radius: 8px;">
