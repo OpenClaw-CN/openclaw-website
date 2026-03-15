@@ -174,6 +174,7 @@ const resources = [
 
 .quality-resources__card:hover .quality-resources__visit {
   color: var(--vp-c-brand-2);
+  opacity: 1;
 }
 
 .quality-resources__card.is-placeholder {
@@ -262,6 +263,7 @@ const resources = [
   font-size: 0.8rem;
   color: var(--vp-c-brand-1);
   font-weight: 500;
-  transition: color 0.2s ease;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 </style>
