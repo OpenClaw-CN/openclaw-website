@@ -88,7 +88,7 @@ export default defineConfig({
       // 这两个入口仅用于触发右下角提示，不进行路由跳转
       { text: '人类学院', link: 'javascript:void(0)' },
       { text: 'Skill产品', link: 'javascript:void(0)' },
-      { text: '关于我们', link: '/about/' }
+      { text: '关于', link: '/about/' }
     ],
 
     // 侧边栏配置
