@@ -127,8 +127,7 @@ export default defineConfig({
         {
           text: '未来规划',
           items: [
-            { text: '2026 Q1 路线图', link: '/roadmap/' },
-            { text: '🔥 当前悬赏任务', link: '/roadmap/current-tasks' } // ✨ 悬赏任务入口
+            { text: '2026 Q1 路线图', link: '/roadmap/' }
           ]
         }
       ],
