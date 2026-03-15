@@ -4,6 +4,7 @@ import { onMounted, onUnmounted } from 'vue'
 import { applyInitialTheme } from './util'
 import AdSidebar from './AdSidebar.vue'
 import AdSponsorWall from './AdSponsorWall.vue'
+import QualityResources from './QualityResources.vue'
 import AdDocFooter from './AdDocFooter.vue'
 import AdTopBanner from './AdTopBanner.vue'
 import ComingSoonToast from './ComingSoonToast.vue'
@@ -52,8 +53,9 @@ onUnmounted(() => {
     <template #aside-outline-after>
       <AdSidebar position="SidebarRightSticky" />
     </template>
-    <!-- 首页底部企业 Logo 矩阵墙 -->
+    <!-- 首页优质资源 + 铂金赞助 -->
     <template #home-features-after>
+      <QualityResources />
       <AdSponsorWall />
     </template>
     <!-- 正文内容底部、评论区上方的原生文字链区 -->
