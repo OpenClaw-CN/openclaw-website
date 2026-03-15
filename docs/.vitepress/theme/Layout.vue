@@ -1,15 +1,36 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { applyInitialTheme } from './util'
 import AdSidebar from './AdSidebar.vue'
 import AdSponsorWall from './AdSponsorWall.vue'
 import AdDocFooter from './AdDocFooter.vue'
 import AdTopBanner from './AdTopBanner.vue'
+import ComingSoonToast from './ComingSoonToast.vue'
 const { Layout } = DefaultTheme
+
+function handleNavClick(e: MouseEvent) {
+  const a = (e.target as HTMLElement).closest?.('a')
+  if (!a) return
+  const text = a.textContent?.trim()
+  if (text === '人类学院') {
+    e.preventDefault()
+    e.stopPropagation()
+    window.dispatchEvent(new CustomEvent('open-coming-soon', { detail: 'academy' }))
+  } else if (text === 'Skill产品') {
+    e.preventDefault()
+    e.stopPropagation()
+    window.dispatchEvent(new CustomEvent('open-coming-soon', { detail: 'skill' }))
+  }
+}
 
 onMounted(() => {
   applyInitialTheme()
+  document.addEventListener('click', handleNavClick, true)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleNavClick, true)
 })
 </script>
 
@@ -40,4 +61,5 @@ onMounted(() => {
       <AdDocFooter />
     </template>
   </Layout>
+  <ComingSoonToast />
 </template>

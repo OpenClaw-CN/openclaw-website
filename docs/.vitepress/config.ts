@@ -85,7 +85,9 @@ export default defineConfig({
       { text: '快速开始', link: '/guide/getting-started' },
 	  { text: '实战指南', link: '/practical/' },
       { text: '路线图', link: '/roadmap/' },
-      { text: '插件市场', link: '/plugins/' },
+      // 这两个入口仅用于触发右下角提示，不进行路由跳转
+      { text: '人类学院', link: 'javascript:void(0)' },
+      { text: 'Skill产品', link: 'javascript:void(0)' },
       { text: '关于我们', link: '/about/' }
     ],
 
