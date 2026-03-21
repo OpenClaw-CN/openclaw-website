@@ -85,14 +85,23 @@ export default defineConfig({
       { text: '快速开始', link: '/guide/getting-started' },
 	  { text: '实战指南', link: '/practical/' },
       { text: '路线图', link: '/roadmap/' },
-      // 这两个入口仅用于触发右下角提示，不进行路由跳转
-      { text: '人类学院', link: 'javascript:void(0)' },
+      { text: '人类学院', link: '/academy/' },
       { text: 'Skill产品', link: 'javascript:void(0)' },
       { text: '关于', link: '/about/' }
     ],
 
     // 侧边栏配置
     sidebar: {
+      '/academy/': [
+        {
+          text: '人类学院',
+          items: [
+            { text: '学院首页', link: '/academy/' },
+            { text: '龙虾破冰计划 · 入门实战课', link: '/academy/lobster-breakice' }
+          ]
+        }
+      ],
+
       // 1. 关于我们
       '/about/': [
         {

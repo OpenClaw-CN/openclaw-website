@@ -14,11 +14,7 @@ function handleNavClick(e: MouseEvent) {
   const a = (e.target as HTMLElement).closest?.('a')
   if (!a) return
   const text = a.textContent?.trim()
-  if (text === '人类学院') {
-    e.preventDefault()
-    e.stopPropagation()
-    window.dispatchEvent(new CustomEvent('open-coming-soon', { detail: 'academy' }))
-  } else if (text === 'Skill产品') {
+  if (text === 'Skill产品') {
     e.preventDefault()
     e.stopPropagation()
     window.dispatchEvent(new CustomEvent('open-coming-soon', { detail: 'skill' }))

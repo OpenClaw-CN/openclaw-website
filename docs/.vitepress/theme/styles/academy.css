@@ -1,0 +1,316 @@
+/**
+ * 人类学院（/academy/）页面：与 VitePress 主题变量一致，适配节日主题与明暗模式
+ */
+
+.academy-page {
+  --academy-accent: var(--vp-c-brand-1);
+  --academy-accent-soft: var(--vp-c-brand-soft);
+  --academy-border: var(--vp-c-divider);
+  --academy-bg-soft: var(--vp-c-bg-soft);
+  --academy-text-muted: var(--vp-c-text-2);
+}
+
+/* 注意：不要加 border-bottom，否则与下文第一个 h2 的 border-top（VitePress 默认）会叠成「双线」 */
+.academy-page--index .academy-hero {
+  padding: 1.25rem 0 0.5rem;
+  margin-bottom: 0;
+}
+
+.academy-page--index .academy-hero__lead {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--vp-c-text-1);
+  margin: 0.75rem 0 0;
+}
+
+/* 「什么是赛博养虾」：导语段落 */
+.academy-page--index .academy-section-intro {
+  margin: 0.5rem 0 1rem;
+}
+
+.academy-page--index .academy-section-intro p {
+  margin: 0 0 0.85rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--vp-c-text-1);
+}
+
+.academy-page--index .academy-section-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.academy-page--index .academy-section-intro__steps {
+  margin-top: 1.1rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.98rem;
+  color: var(--vp-c-text-2);
+}
+
+.academy-page--index .academy-feature-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  grid-template-columns: 1fr;
+}
+
+/* 3 列：首行 3、次行 2，与全站卡片风格一致 */
+@media (min-width: 640px) {
+  .academy-page--index .academy-feature-grid--steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .academy-page--index .academy-feature-grid--steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.academy-page--index .academy-feature-item {
+  padding: 0.875rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--academy-border);
+  background: var(--academy-bg-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.academy-page--index .academy-feature-item code {
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.academy-page--index .academy-cta-card {
+  display: block;
+  margin-top: 2rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--academy-border);
+  background: var(--academy-bg-soft);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.academy-page--index .academy-cta-card:hover {
+  border-color: var(--academy-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--vp-shadow-2);
+}
+
+.academy-page--index .academy-cta-card__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin: 0 0 0.5rem;
+}
+
+.academy-page--index .academy-cta-card__meta {
+  font-size: 0.875rem;
+  color: var(--academy-text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.academy-page--index .academy-cta-card__action {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--academy-accent);
+}
+
+/* 课程页 CTA */
+.academy-course-cta {
+  margin: 2.5rem 0 1rem;
+  text-align: center;
+}
+
+.academy-course-cta__btn {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 0.875rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--vp-c-bg);
+  background: var(--academy-accent);
+  box-shadow: var(--vp-shadow-2);
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.academy-course-cta__btn:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.academy-course-cta__hint {
+  margin-top: 0.875rem;
+  font-size: 0.875rem;
+  color: var(--academy-text-muted);
+}
+
+/* 报名弹窗 */
+.join-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.join-modal {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 16px;
+  border: 1px solid var(--academy-border);
+  background: var(--vp-c-bg-elv);
+  box-shadow: var(--vp-shadow-3);
+  padding: 2.25rem 1.5rem 1.75rem;
+  text-align: center;
+}
+
+.join-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  background: var(--academy-bg-soft);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.join-modal__close:hover {
+  color: var(--vp-c-text-1);
+  background: var(--academy-accent-soft);
+}
+
+.join-modal__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--academy-accent);
+  border-bottom: none;
+}
+
+.join-modal__subtitle {
+  margin: 0 0 1.75rem;
+  font-size: 1rem;
+  color: var(--academy-text-muted);
+}
+
+.join-modal__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.join-modal__col {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-modal__qr-wrap {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--academy-border);
+  box-sizing: border-box;
+}
+
+.join-modal__qr-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.join-modal__price {
+  margin-top: 1rem;
+}
+
+.join-modal__price strong {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--academy-accent);
+}
+
+.join-modal__price del {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--academy-text-muted);
+}
+
+.join-modal__label {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--academy-text-muted);
+}
+
+.join-modal__wechat-title {
+  margin-top: 1rem;
+  min-height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+/* 报名弹窗底部：醒目提示块 */
+.join-modal__notice {
+  margin-top: 1.5rem;
+  padding: 1rem 1rem 1.125rem;
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-brand-1);
+  background: linear-gradient(
+    135deg,
+    var(--vp-c-brand-soft) 0%,
+    var(--academy-bg-soft) 100%
+  );
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.join-modal__notice-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--vp-c-bg);
+  background: var(--vp-c-brand-1);
+}
+
+.join-modal__notice-text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.join-modal__notice-text strong {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+}
