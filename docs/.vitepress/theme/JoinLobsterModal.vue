@@ -14,7 +14,7 @@ function close() {
   emit('update:modelValue', false)
 }
 
-/** 与 docs/academy/*.md 同目录下的静态资源，构建后位于站点 /academy/ 下 */
+/** 静态图放在 docs/public/academy/，构建后 URL 为 /academy/…（勿放 docs/academy/，生产构建可能打不进包） */
 const paymentCodeSrc = '/academy/payment-code.jpg'
 const assistantWechatSrc = '/academy/assistant-wechat.jpg'
 </script>
