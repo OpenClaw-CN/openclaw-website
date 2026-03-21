@@ -4,12 +4,6 @@ description: 5 次直播特训，从零孵化你的专属 AI 私有助理
 layout: doc
 ---
 
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const showModal = ref(false)
-</script>
-
 <div class="academy-page academy-page--course">
 
 # 🦞 龙虾破冰计划：OpenClaw 入门实战课
@@ -90,13 +84,41 @@ const showModal = ref(false)
 * 📅 **开营时间**：**3 月 27 号 晚上 8:00** 准时发车
 * 💡 **学习保障**：直播回看 + 社群答疑 + 优秀作业奖学金
 
-<div class="academy-course-cta">
-  <button type="button" class="academy-course-cta__btn" @click="showModal = true">
-    🔥 立即报名 / 抢占早鸟席位
-  </button>
-  <p class="academy-course-cta__hint">* 点击按钮查看收款码与报名助理，抢占首期破冰特训名额！</p>
+<div class="academy-enroll">
+
+<p class="academy-enroll__lead">微信扫码付费后，添加助理微信进群；请保存好付费凭证截图，便于助理核验。</p>
+
+<div class="academy-enroll__grid">
+  <div class="academy-enroll__col">
+    <div class="academy-enroll__qr-wrap">
+      <img src="/academy/payment-code.jpg" alt="收款码" width="220" height="220" loading="lazy" />
+    </div>
+    <div class="academy-enroll__meta">
+      <div class="academy-enroll__headline academy-enroll__headline--pay" aria-label="早鸟价">
+        <span class="academy-enroll__price-num">¥98</span>
+        <del class="academy-enroll__price-was">原价 ¥196</del>
+      </div>
+      <p class="academy-enroll__caption">微信扫码付费</p>
+    </div>
+  </div>
+  <div class="academy-enroll__col">
+    <div class="academy-enroll__qr-wrap">
+      <img src="/academy/assistant-wechat.jpg" alt="助理微信码" width="220" height="220" loading="lazy" />
+    </div>
+    <div class="academy-enroll__meta">
+      <div class="academy-enroll__headline academy-enroll__headline--action">添加微信进群</div>
+      <p class="academy-enroll__caption">交流答疑 · 文档资料 · 权益通知</p>
+    </div>
+  </div>
+</div>
+
+<div class="academy-enroll__notice" role="note">
+  <span class="academy-enroll__notice-label">重要提示</span>
+  <p class="academy-enroll__notice-text">
+    扫码付费后，请<strong>添加群助理</strong>，将<strong>付费凭证截图</strong>发给群助理；群助理验证后会<strong>拉你入群</strong>。
+  </p>
 </div>
 
 </div>
 
-<JoinLobsterModal v-model="showModal" />
+</div>
