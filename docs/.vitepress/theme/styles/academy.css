@@ -299,13 +299,9 @@
 .academy-page--course .academy-enroll__caption {
   margin: 0;
   width: 100%;
-  min-height: 2.75rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   text-align: center;
   font-size: 0.8125rem;
-  line-height: 1.5;
+  line-height: 1.55;
   font-weight: 400;
   color: var(--academy-text-muted);
 }

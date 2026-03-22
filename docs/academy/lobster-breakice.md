@@ -110,7 +110,7 @@ layout: doc
         <span class="academy-enroll__price-num">¥98</span>
         <del class="academy-enroll__price-was">原价 ¥196</del>
       </div>
-      <p class="academy-enroll__caption">微信扫码付费</p>
+      <p class="academy-enroll__caption">微信扫码付费。手机端保存图片，微信扫一扫打开即可付款。</p>
     </div>
   </div>
   <div class="academy-enroll__col">
