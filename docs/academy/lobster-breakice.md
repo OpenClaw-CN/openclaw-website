@@ -84,6 +84,17 @@ layout: doc
 * 📅 **开营时间**：**3 月 27 号 晚上 8:00** 准时发车
 * 💡 **学习保障**：直播回看 + 社群答疑 + 优秀作业奖学金
 
+<div class="academy-course-schedule">
+
+<p class="academy-course-schedule__title">📋 课程时间安排</p>
+
+<figure class="academy-course-schedule__figure">
+  <img src="/academy/kechengbiao.png" alt="龙虾破冰计划 · 课程表（开课时间与周期）" loading="lazy" />
+  <figcaption class="academy-course-schedule__caption">本次训练营各节直播与周期安排，请以开营群通知为准。</figcaption>
+</figure>
+
+</div>
+
 <div class="academy-enroll">
 
 <p class="academy-enroll__lead">微信扫码付费后，添加助理微信进群；请保存好付费凭证截图，便于助理核验。</p>
