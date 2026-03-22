@@ -120,6 +120,49 @@
   color: var(--academy-accent);
 }
 
+/* 课程表图片（学习保障下方） */
+.academy-page--course .academy-course-schedule {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1rem 1.125rem;
+  border-radius: 12px;
+  border: 1px solid var(--academy-border);
+  background: var(--vp-c-bg-soft);
+}
+
+.academy-page--course .academy-course-schedule__title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-align: center;
+}
+
+.academy-page--course .academy-course-schedule__figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.academy-page--course .academy-course-schedule__figure img {
+  display: block;
+  width: 100%;
+  max-width: min(720px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid var(--academy-border);
+  background: var(--vp-c-bg);
+  box-sizing: border-box;
+}
+
+.academy-page--course .academy-course-schedule__caption {
+  margin: 0.65rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--academy-text-muted);
+  text-align: center;
+}
+
 /* 课程页「立即上车」内嵌：收款码 + 助理码（无弹窗） */
 .academy-page--course .academy-enroll {
   margin: 1.75rem 0 0.5rem;
