@@ -8,7 +8,7 @@ let mouseListener: (() => void) | null = null
 
 const content = {
   academy: {
-    title: '人类学院功能即将开放',
+    title: '养虾学院功能即将开放',
     body: '我们正在搭建人类学习养虾的学院，敬请期待',
   },
   skill: {
