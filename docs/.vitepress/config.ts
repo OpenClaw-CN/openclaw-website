@@ -85,7 +85,7 @@ export default defineConfig({
       { text: '快速开始', link: '/guide/getting-started' },
 	  { text: '实战指南', link: '/practical/' },
       { text: '路线图', link: '/roadmap/' },
-      { text: '人类学院', link: '/academy/' },
+      { text: '养虾学院', link: '/academy/' },
       { text: 'Skill产品', link: 'javascript:void(0)' },
       { text: '关于', link: '/about/' }
     ],
@@ -94,7 +94,7 @@ export default defineConfig({
     sidebar: {
       '/academy/': [
         {
-          text: '人类学院',
+          text: '养虾学院',
           items: [
             { text: '学院首页', link: '/academy/' },
             { text: '龙虾破冰计划 · 入门实战课', link: '/academy/lobster-breakice' }
