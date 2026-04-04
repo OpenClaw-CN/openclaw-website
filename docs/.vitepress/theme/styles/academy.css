@@ -355,28 +355,47 @@
   }
 }
 
-/* 往期精彩回顾 – 图片画廊 */
+/* 往期精彩回顾 – 图片画廊
+ * 兼容：微信 X5 WebView、iOS Safari、Android Chrome
+ * 不依赖 flex-basis:0 / min-width:0 / gap，避免旧引擎宽度塌缩 */
 .academy-page--course .academy-gallery {
   margin: 1.5rem 0 2rem;
 }
 
 .academy-page--course .academy-gallery__grid {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  gap: 0.75rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  margin: 0 -0.375rem;
 }
 
 .academy-page--course .academy-gallery__item {
-  flex: 1 1 0;
-  min-width: 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 48%;
   max-width: 380px;
-  margin: 0;
+  margin: 0 0.375rem 0.75rem;
   padding: 0;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--academy-border);
   background: var(--vp-c-bg);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.academy-page--course .academy-gallery__item:first-child:nth-last-child(3),
+.academy-page--course .academy-gallery__item:first-child:nth-last-child(3) ~ .academy-gallery__item {
+  width: 31%;
 }
 
 .academy-page--course .academy-gallery__item:hover {
@@ -387,8 +406,8 @@
 .academy-page--course .academy-gallery__item img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 .academy-page--course .academy-gallery__caption {
@@ -401,11 +420,21 @@
 
 @media (max-width: 520px) {
   .academy-page--course .academy-gallery__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     flex-direction: column;
-    align-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    margin: 0;
   }
 
-  .academy-page--course .academy-gallery__item {
+  .academy-page--course .academy-gallery__item,
+  .academy-page--course .academy-gallery__item:first-child:nth-last-child(3),
+  .academy-page--course .academy-gallery__item:first-child:nth-last-child(3) ~ .academy-gallery__item {
+    width: 100%;
     max-width: 100%;
+    margin: 0 0 0.75rem;
   }
 }
