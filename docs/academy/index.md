@@ -50,15 +50,15 @@ outline: [2, 3]
 「养虾学院」沉淀社区最接地气的实战经验：听得懂、抄得走、用得上。无论你是职场新人、AI 爱好者还是开发者，都能在这里找到属于自己的养虾路径。
 
 
-## 首期实战：龙虾破冰计划
+## 特训实战：龙虾破冰计划
 
-养虾学院首期特训已开放详情与报名入口，带你从环境搭建走到通道与技能落地。
+养虾学院特训实战已开放详情与报名入口，带你从环境搭建走到通道与技能落地。
 
 <a class="academy-cta-card" href="/academy/lobster-breakice">
 
 <p class="academy-cta-card__title">🦞 龙虾破冰计划 · OpenClaw 入门实战课</p>
 
-<p class="academy-cta-card__meta">5 次直播 · 10 节大课 · 导师答疑 · 社群陪伴</p>
+<p class="academy-cta-card__meta">7 次直播 · 14 节大课 · 导师答疑 · 社群陪伴</p>
 
 <span class="academy-cta-card__action">查看课程大纲与报名信息 →</span>
 
