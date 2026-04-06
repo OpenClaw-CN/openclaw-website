@@ -103,7 +103,7 @@ pnpm openclaw onboard --install-daemon
 
 * OpenClaw原版如下图：
 
-![图片6](/practical/windows-native/6-1.jpg)
+![图片6](/practical/windows-native/6-1.png)
 
 
 我们以管理员权限运行，切换到 OpenClaw 源码目录，然后执行以下命令：
