@@ -8,6 +8,7 @@ import QualityResources from './QualityResources.vue'
 import AdDocFooter from './AdDocFooter.vue'
 import AdTopBanner from './AdTopBanner.vue'
 import ComingSoonToast from './ComingSoonToast.vue'
+import CoursePromo from './CoursePromo.vue'
 const { Layout } = DefaultTheme
 
 function handleNavClick(e: MouseEvent) {
@@ -54,8 +55,9 @@ onUnmounted(() => {
       <QualityResources />
       <AdSponsorWall />
     </template>
-    <!-- 正文内容底部、评论区上方的原生文字链区 -->
+    <!-- 养虾学院实战课推广（仅 guide/ 和 practical/ 页面） -->
     <template #doc-footer-before>
+      <CoursePromo />
       <AdDocFooter />
     </template>
   </Layout>

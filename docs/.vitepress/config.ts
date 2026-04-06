@@ -160,7 +160,9 @@ export default defineConfig({
             { text: '实战指南首页', link: '/practical/' },
             { text: 'windows原生源码安装', link: '/practical/windows-native' },
             { text: 'Linux 源码安装', link: '/practical/linux_practical' },
-            { text: 'Gateway局域网配置', link: '/practical/tutorial-gateway-bind' }
+            { text: 'Gateway局域网配置', link: '/practical/tutorial-gateway-bind' },
+            { text: '火山引擎·官方模式（推荐）', link: '/practical/volcengine-llm-2' },
+            { text: '火山引擎·自定义模式', link: '/practical/volcengine-llm' }
           ]
         }
       ]
