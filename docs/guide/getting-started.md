@@ -23,19 +23,28 @@ Windows：使用 **WSL2**（推荐 Ubuntu）。强烈推荐 WSL2；**原生 Wind
 
 ### macOS、Linux 和 WSL2 三种环境：
 
+* **中国社区版：**
 ```bash
 curl -fsSL https://open-claw.org.cn/install-cn.sh | bash
 ```
+* **OpenClaw原版：**
+```bash
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
 
 ### Windows（PowerShell）：
-安装脚本不会在Windows原生环境自动下载Git，请手工安装。
-* **Git**：用于下载代码 ([下载 Git](https://git-scm.com/))
 
+* **中国社区版：**
+安装脚本不会在Windows原生环境自动下载Git，请手工安装。**Git**：用于下载代码 ([下载 Git](https://git-scm.com/))
 ```powershell
 # 以管理员身份运行PowerShell，执行以下命令
 iwr -useb https://open-claw.org.cn/install-cn.ps1 | iex
 ```
-
+* **OpenClaw原版：**
+```powershell
+# 以管理员身份运行PowerShell，执行以下命令
+iwr -useb https://openclaw.ai/install.ps1 | iex
+```
 
 ## 从源代码（贡献者/开发）
 
@@ -54,10 +63,16 @@ npm install -g pnpm
 为了确保国内访问速度，请从 Gitee 镜像仓库下载。
 为了获得最稳定的体验，推荐切换到最新的稳定版分支：
 
+* **中国社区版：**
 ```bash
-# 1. 克隆仓库
 git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
 cd openclaw-cn
+```
+
+* **OpenClaw原版：**
+```bash
+git clone https://github.com/openclaw/openclaw.git
+cd openclaw
 ```
 
 ### 2. 配置国内加速 (关键！)
