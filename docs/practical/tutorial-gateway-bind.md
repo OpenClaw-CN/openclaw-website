@@ -1,8 +1,13 @@
-# Gateway局域网配置教程
+---
+title: OpenClaw Gateway 局域网配置
+description: 配置 OpenClaw Gateway 的 bind 模式，从仅本机访问改为局域网可访问，支持 WSL 跨主机访问和 Nginx 反向代理场景
+---
+
+# OpenClaw Gateway 局域网配置
 
 <span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：努力向前</span>
 
-本文说明 OpenClaw 中 **gateway.bind** 的含义、可选值，以及如何从仅本机访问（loopback）改为允许局域网或所有接口访问（lan）。
+本文介绍如何配置 OpenClaw Gateway 的 `gateway.bind` 参数，将网关从默认的仅本机访问（loopback）改为允许局域网设备访问（lan），适用于 WSL 跨主机访问、多设备共享 Gateway 等场景。
 
 
 ## 一、为什么只有本机能访问？

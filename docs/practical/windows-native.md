@@ -1,12 +1,15 @@
-# Windows 原生实战
+---
+title: Windows 原生安装 OpenClaw
+description: 不使用 WSL，直接在 Windows 原生环境下通过 PowerShell 和 Git Bash 从源码安装 OpenClaw，包含 Node.js、pnpm 配置和飞书机器人接入
+---
+
+# Windows 原生安装 OpenClaw
 
 <span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：努力向前</span>
 
-这篇文章我就只做一件事：把 Windows 上安装 openclaw 这件事讲清楚、讲顺手。我把安装路径分成两条：一条是更稳妥的 WSL2（更接近 Linux 的官方环境，后续坑更少），另一条是原生 Windows（更快上手，但对 PowerShell 和系统环境更挑剔）。
+本文介绍如何在 Windows 原生环境下（不使用 WSL）从源码安装 OpenClaw。安装路径分为两条：WSL2（更接近 Linux 官方环境，后续坑更少）和原生 Windows（更快上手，但对 PowerShell 和系统环境更挑剔）。本文主要讲原生 Windows 安装过程。
 
-今天主要讲原生 Windows 安装过程。
-
-## 原生 Windows 安装
+## 原生 Windows 安装 OpenClaw
 
 如果你不想配置 WSL，希望直接在 Windows 环境下运行，可以按照以下步骤操作：
 

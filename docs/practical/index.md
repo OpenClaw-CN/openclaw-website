@@ -1,23 +1,23 @@
 ---
-title: 实战指南
-description: 按环境手把手安装与配置 OpenClaw，从零到跑通
+title: OpenClaw 实战指南
+description: 按操作系统和使用场景整理的 OpenClaw 安装、配置与大模型接入教程，覆盖 Windows、Linux、macOS 以及火山引擎等国产大模型平台
 ---
 
-# 实战指南
+# OpenClaw 实战指南
 
-本栏目是按**操作系统 / 环境**整理的安装与配置教程，跟着做即可从零跑通 OpenClaw，并接上 DeepSeek、飞书等。
+本栏目按**操作系统和使用场景**整理了 OpenClaw 的安装、配置与大模型接入教程。无论你使用 Windows、Linux 还是 macOS，都可以找到对应的实战指南，从零开始跑通 OpenClaw 并接入 DeepSeek、火山引擎等国产大模型。
 
-## 按环境选择
+## 按环境选择教程
 
-根据你的环境选一篇跟着做即可：
+根据你的操作系统和使用场景，选择一篇跟着做即可：
 
-| 实战文档 | 说明 |
-|----------|------|
-| [Windows 原生源码安装](/practical/windows-native) | 不装 WSL，直接在 Windows 下用 PowerShell + Git Bash 安装 |
-| [Linux 源码安装](/practical/linux_practical) | Ubuntu 等环境下从源码安装、构建与启动 |
-| [Gateway 局域网配置](/practical/tutorial-gateway-bind) | Gateway 局域网绑定与访问配置 |
-| [火山引擎·官方模式（推荐）](/practical/volcengine-llm-2) | 使用内置 Volcano Engine 供应商一键接入，自动识别模型列表 |
-| [火山引擎·自定义模式](/practical/volcengine-llm) | 通过 Custom Provider 手动配置 Base URL 和 Model ID |
+| 教程 | 适用场景 |
+|------|----------|
+| [Windows 原生安装 OpenClaw](/practical/windows-native) | 不装 WSL，直接在 Windows 下用 PowerShell + Git Bash 从源码安装 |
+| [Linux 源码安装 OpenClaw](/practical/linux_practical) | Ubuntu 等 Linux 环境下从源码安装、构建与启动 |
+| [OpenClaw Gateway 局域网配置](/practical/tutorial-gateway-bind) | 将 Gateway 绑定到局域网，实现多设备访问 |
+| [火山引擎接入 OpenClaw — 官方模式（推荐）](/practical/volcengine-llm-2) | 使用内置 Volcano Engine 供应商一键接入，自动识别模型列表 |
+| [火山引擎接入 OpenClaw — 自定义模式](/practical/volcengine-llm) | 通过 Custom Provider 手动配置 Base URL 和 Model ID |
 
 ## 📮 招募实战稿
 

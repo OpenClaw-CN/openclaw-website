@@ -1,8 +1,13 @@
-# 安装
+---
+title: Linux 源码安装 OpenClaw
+description: 在 Ubuntu 等 Linux 环境下从源码安装 OpenClaw，包含 Node.js、pnpm 配置、项目构建、Nginx 反向代理和外网 HTTPS 访问配置
+---
+
+# Linux 源码安装 OpenClaw
 
 <span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：在路上</span>
 
-## linux源码安装
+## 环境准备与源码安装
 ::: warning 注意事项
 - 演示操作系统：Ubuntu 22.04 LTS
 - 演示环境：虚拟机环境或云服务器

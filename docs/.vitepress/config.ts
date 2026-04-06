@@ -156,12 +156,12 @@ export default defineConfig({
         {
           text: '实战指南',
           items: [
-            { text: '实战指南首页', link: '/practical/' },
-            { text: 'windows原生源码安装', link: '/practical/windows-native' },
-            { text: 'Linux 源码安装', link: '/practical/linux_practical' },
-            { text: 'Gateway局域网配置', link: '/practical/tutorial-gateway-bind' },
-            { text: '火山引擎·官方模式（推荐）', link: '/practical/volcengine-llm-2' },
-            { text: '火山引擎·自定义模式', link: '/practical/volcengine-llm' }
+            { text: 'OpenClaw 实战指南', link: '/practical/' },
+            { text: 'Windows 原生安装 OpenClaw', link: '/practical/windows-native' },
+            { text: 'Linux 源码安装 OpenClaw', link: '/practical/linux_practical' },
+            { text: 'OpenClaw Gateway 局域网配置', link: '/practical/tutorial-gateway-bind' },
+            { text: '火山引擎接入 OpenClaw（推荐）', link: '/practical/volcengine-llm-2' },
+            { text: '火山引擎接入 OpenClaw · 自定义模式', link: '/practical/volcengine-llm' }
           ]
         }
       ]
