@@ -112,25 +112,45 @@ pnpm openclaw onboard --install-daemon
 pnpm openclaw onboard --install-daemon
 ```
 
-![图片7](/practical/windows-native/7.jpg)
+![图片7](/practical/windows-native/7.png)
 
 再次看到这个页面，执行 **yes**。选择**快速开始**。
 
-![图片8](/practical/windows-native/8.jpg)
+![图片8](/practical/windows-native/8.png)
 
 轻松通过，果然还是图形的兼容问题，这里我们选择 **DeepSeek**。选择 **API key**，然后输入正确的 key 值。选择当前模型。
 
-![图片9](/practical/windows-native/9.jpg)
+![图片9](/practical/windows-native/9.png)
 
-通道这里选择**暂时跳过**，等 Gateway 启动后再配置。选择 **yes**，然后选择 **pnpm**。真实的 skill 安装时，可以暂时跳过，后续再配置（使用空格键选择）。
+通道这里选择**暂时跳过**，等 Gateway 启动后再配置。
 
-![图片10](/practical/windows-native/10.jpg)
+![图片10](/practical/windows-native/10.png)
 
-然后一路都选择 no，最后看到网关启动，然后选择 **Open the Web UI**，你就会看到以下页面：
+Web Search选择跳过
 
-![图片11](/practical/windows-native/11.jpg)
+![图片11](/practical/windows-native/11.png)
 
-这说明安装成功了！
+Skill安装选择 **yes**，看到skill列表后，如果有能安装就装，如果都没有准备好就跳过。
+
+![图片12](/practical/windows-native/12.png)
+
+剩下的配置，都选择 no.
+
+![图片12-1](/practical/windows-native/12-1.png)
+
+Hooks 选择四个都装（使用空格键选择）
+
+![图片13](/practical/windows-native/13.png)
+
+直到弹出一个新窗口，说明网关启动！
+
+然后执行以下命令：
+
+```bash
+pnpm openclaw onboard --install-daemon
+```
+
+会自动弹出登录页，这说明安装成功了！
 
 ## 常见问题
 
@@ -170,7 +190,7 @@ netstat -ano | findstr 18789
 
 OpenClaw 需要连接一个 AI 大模型才能「思考」。我们刚才已经配置了 DeepSeek，所以你可以在页面和它对话。
 
-![图片12](/practical/windows-native/12.jpg)
+![图片14](/practical/windows-native/14.png)
 
 ## 配置飞书机器人通道
 
