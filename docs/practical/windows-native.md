@@ -2,7 +2,7 @@
 
 <span style="font-size: 0.875rem; color: var(--vp-c-text-2);">作者：努力向前</span>
 
-这篇文章我就只做一件事：把 Windows 上安装 openclaw-cn 这件事讲清楚、讲顺手。我把安装路径分成两条：一条是更稳妥的 WSL2（更接近 Linux 的官方环境，后续坑更少），另一条是原生 Windows（更快上手，但对 PowerShell 和系统环境更挑剔）。
+这篇文章我就只做一件事：把 Windows 上安装 openclaw 这件事讲清楚、讲顺手。我把安装路径分成两条：一条是更稳妥的 WSL2（更接近 Linux 的官方环境，后续坑更少），另一条是原生 Windows（更快上手，但对 PowerShell 和系统环境更挑剔）。
 
 今天主要讲原生 Windows 安装过程。
 
@@ -46,7 +46,7 @@ OpenClaw 的构建流程中包含了一些 Shell 脚本（如 .sh 文件），Wi
 npm install -g pnpm
 ```
 
-- 使用 pnpm 安装 openclaw-cn 时会下载很多依赖包，国内安装配置国内的镜像源可以保证包的下载速度：
+- 使用 pnpm 安装 openclaw 时会下载很多依赖包，国内安装配置国内的镜像源可以保证包的下载速度：
 
 ```bash
 # 设置淘宝/阿里云镜像
@@ -55,29 +55,30 @@ pnpm config set registry https://registry.npmmirror.com/
 
 ### 第 4 步：源码安装与启动
 
-采用 OpenClaw 中国社区版维护的 openclaw-cn 版本安装，原生支持 DeepSeek，基于 OpenClaw v2026.2.2 版，原生支持飞书通道。
+采用 OpenClaw 中国社区版维护的 openclaw-cn 版本安装，原生支持 DeepSeek，原生支持飞书通道。
 
 ```bash
 git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
 cd openclaw-cn
 ```
 
-![图片2](/practical/windows-native/2.jpg)
+采用 OpenClaw 原版安装，原生支持飞书通道。
 
 ```bash
-# 2. 安装依赖（速度飞快）
-pnpm install
+git clone https://github.com/openclaw/openclaw.git
+cd openclaw
 ```
 
-![图片3](/practical/windows-native/3.jpg)
+```bash
+# 2. 安装依赖
+pnpm install
+```
 
 ```bash
 # 3. 首次构建 UI 依赖
 pnpm ui:build
 pnpm build
 ```
-
-![图片4](/practical/windows-native/4.jpg)
 
 ```bash
 pnpm openclaw onboard --install-daemon
@@ -94,8 +95,14 @@ pnpm openclaw onboard --install-daemon
 **表现就是：** 你按了箭头键，界面没反应，或者过了很久才动一下，甚至直接「死」在那里。
 
 所以，从现在开始，我们转换成 **PowerShell**。
+* 中国社区版如下图：
 
 ![图片6](/practical/windows-native/6.jpg)
+
+* OpenClaw原版如下图：
+
+![图片6](/practical/windows-native/6-1.jpg)
+
 
 我们以管理员权限运行，切换到 openclaw-cn 的目录，然后执行以下命令：
 

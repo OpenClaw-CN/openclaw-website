@@ -1,27 +1,26 @@
 ---
-title: 快速开始
-description: 3分钟在本地启动你的第一个 AI Agent
+title: OpenClaw 安装教程
+description: 在 macOS、Linux 或 Windows 上安装 OpenClaw，支持一键脚本和源码两种方式，快速启动本地 AI Agent
 ---
 
-# ⚡ 快速开始
+# OpenClaw 安装教程
 
-欢迎来到 OpenClaw 中国社区。本指南将帮助你在 3 分钟内，在本地电脑上启动并运行一个纯净、安全的 OpenClaw Agent。
-
-# 安装
+本文介绍如何在 macOS、Linux 和 Windows 上安装 OpenClaw 并启动你的第一个本地 AI Agent。提供一键安装脚本和源码构建两种方式，适合不同使用场景。
 
 ## 系统要求
 
-- **Node >=22**
-- macOS、Linux 或通过 WSL2 的 Windows
+- **Node.js >= 22**
+- macOS、Linux 或 Windows（推荐通过 WSL2）
 
-macOS：如果你计划构建应用，安装 Xcode / CLT。仅用于 CLI + Gateway 网关的话，Node 就足够了。
-Windows：使用 **WSL2**（推荐 Ubuntu）。强烈推荐 WSL2；**原生 Windows 未经测试，问题较多，工具兼容性更差。**
+**macOS**：如果你计划构建应用，需要安装 Xcode 或 Command Line Tools。仅使用 CLI + Gateway 网关的话，Node.js 即可。
 
-## 快速安装（推荐）
+**Windows**：推荐使用 **WSL2**（Ubuntu）。WSL2 环境更接近 Linux，兼容性更好；原生 Windows 可以运行但工具链兼容性较差，遇到问题可参考 [Windows 原生源码安装实战](/practical/windows-native)。
 
-使用安装器，它会设置 CLI 并运行新手引导。
+## 一键安装（推荐）
 
-### macOS、Linux 和 WSL2 三种环境：
+使用官方安装脚本，自动完成 CLI 安装和初始化引导。
+
+### macOS / Linux / WSL2
 
 * **中国社区版：**
 ```bash
@@ -32,7 +31,7 @@ curl -fsSL https://open-claw.org.cn/install-cn.sh | bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-### Windows（PowerShell）：
+### Windows（PowerShell）
 
 * **中国社区版：**
 安装脚本不会在Windows原生环境自动下载Git，请手工安装。**Git**：用于下载代码 ([下载 Git](https://git-scm.com/))
@@ -46,9 +45,9 @@ iwr -useb https://open-claw.org.cn/install-cn.ps1 | iex
 iwr -useb https://openclaw.ai/install.ps1 | iex
 ```
 
-## 从源代码（贡献者/开发）
+## 从源码安装 OpenClaw（开发者 / 贡献者）
 
-OpenClaw CN 引入了最新的底层安全机制与构建工具，请确保环境满足以下要求：
+如果你希望参与开发或需要定制构建，可以从源码安装。OpenClaw CN 引入了最新的底层安全机制与构建工具，请确保环境满足以下要求：
 
 * **Node.js**：**必须 >= v22.0.0** ([下载 Node.js v22](https://nodejs.org/zh-cn))
 * **包管理器**：强制推荐使用 **pnpm** (npm 在处理依赖树时可能会卡死)
@@ -101,18 +100,18 @@ pnpm build
 :::
 
 ### 4. 启动初始化向导
-我们提供了交互式的初始化工具，帮你一键配置 DeepSeek：
+运行交互式初始化工具，完成 AI 模型配置（支持 DeepSeek、火山引擎等国产大模型）：
 
 ```bash
 pnpm openclaw onboard --install-daemon
 ```
 
-::: tip 💡 提示
-在向导中，**Select Provider** 步骤请直接选择 `DeepSeek`，系统会自动完成所有配置。
+::: tip 提示
+在向导的 **Select Provider** 步骤中，可以直接选择 `DeepSeek`，系统会自动完成配置。如需接入火山引擎方舟等其他平台，请参考 [火山引擎大模型接入指南](/practical/volcengine-llm-2)。
 :::
 
-### 5. 启动服务 (初始化完成后)
-初始化完成后，你可以通过以下命令再次启动网关服务（前提是网关已经关闭）：
+### 5. 启动 OpenClaw 服务
+初始化完成后，可以通过以下命令启动 Gateway 网关服务：
 
 ```bash
 # 启动网关 (Gateway)
@@ -127,17 +126,25 @@ pnpm openclaw dashboard
 ```
 
 
-## 安装后
+## 安装后检查
 
-- 快速检查：`openclaw doctor`
-- 检查 Gateway 网关健康状态：`openclaw status` + `openclaw health`
-- 打开仪表板：`openclaw dashboard`
+安装完成后，建议执行以下命令确认 OpenClaw 运行状态：
 
+- 环境诊断：`openclaw doctor`
+- Gateway 网关状态：`openclaw status` 和 `openclaw health`
+- 打开管理面板：`openclaw dashboard`
 
-## 🎯 你的第一个任务
+## 试一试：你的第一个 OpenClaw 任务
 
-启动成功后，进入管理面板或交互式命令行，试着给 Agent 下达第一个指令：
+启动成功后，进入管理面板或交互式命令行，给 Agent 下达第一个指令：
 
 > **"请帮我在桌面上创建一个名为 hello_openclaw.txt 的文件，并在里面写入：大道至简，实战落地。"**
 
-Agent 将会自动规划任务、调用文件系统 API，并完成操作。
+OpenClaw Agent 会自动规划任务、调用文件系统工具并完成操作。
+
+## 接下来
+
+- 了解更多大模型接入方式：[火山引擎方舟大模型接入指南](/practical/volcengine-llm-2)
+- Windows 原生环境安装：[Windows 原生源码安装实战](/practical/windows-native)
+- Linux 服务器部署：[Linux 源码安装实战](/practical/linux_practical)
+- 需要卸载或重装？参考 [OpenClaw 卸载指南](/guide/uninstall)

@@ -118,8 +118,8 @@ export default defineConfig({
           text: '快速上手',
           items: [
             { text: 'OpenClaw 是什么?', link: '/guide/what-is-openclaw' },
-            { text: '保姆级安装教程', link: '/guide/getting-started' },
-            { text: '如何卸载', link: '/guide/uninstall' }
+            { text: 'OpenClaw 安装教程', link: '/guide/getting-started' },
+            { text: 'OpenClaw 卸载指南', link: '/guide/uninstall' }
           ]
         },
         {
