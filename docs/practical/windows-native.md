@@ -55,16 +55,18 @@ pnpm config set registry https://registry.npmmirror.com/
 
 ### 第 4 步：源码安装与启动
 
-采用 OpenClaw 中国社区版维护的 openclaw-cn 版本安装，原生支持 DeepSeek，原生支持飞书通道。
+* 采用 OpenClaw 中国社区版维护的 openclaw-cn 版本安装，原生支持 DeepSeek，原生支持飞书通道。
 
 ```bash
+# 1. 下载源码
 git clone https://gitee.com/OpenClaw-CN/openclaw-cn.git
 cd openclaw-cn
 ```
 
-采用 OpenClaw 原版安装，原生支持飞书通道。
+* 采用 OpenClaw 原版安装，原生支持飞书通道。
 
 ```bash
+# 1. 下载源码
 git clone https://github.com/openclaw/openclaw.git
 cd openclaw
 ```
@@ -104,7 +106,7 @@ pnpm openclaw onboard --install-daemon
 ![图片6](/practical/windows-native/6-1.jpg)
 
 
-我们以管理员权限运行，切换到 openclaw-cn 的目录，然后执行以下命令：
+我们以管理员权限运行，切换到 OpenClaw 源码目录，然后执行以下命令：
 
 ```bash
 pnpm openclaw onboard --install-daemon
