@@ -8,7 +8,7 @@ titleTemplate: false
 hero:
   name: "OpenClaw CN"
   text: "DeepSeek 驱动的 Local Agent 基础设施"
-  tagline: 🇨🇳 源码级原生支持 DeepSeek | pnpm 极速构建 | 关注数据安全
+  tagline: OpenClaw中文最大社区 | pnpm 极速构建 | 关注数据安全
   image:
     src: /logo.png
     alt: OpenClaw Logo
