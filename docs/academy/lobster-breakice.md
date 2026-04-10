@@ -1,6 +1,6 @@
 ---
 title: 龙虾破冰计划 · OpenClaw 入门实战课
-description: 7 次直播特训，从零孵化你的专属 AI 私有助理
+description: OpenClaw 入门实战课 · 7 天直播特训，从零部署本地 AI Agent 私人助理，涵盖飞书钉钉接入、人格配置与 Skill 技能开发。
 layout: doc
 ---
 
@@ -86,11 +86,11 @@ layout: doc
 <div class="academy-gallery__grid">
 
 <figure class="academy-gallery__item">
-  <img src="/academy/review-1-1.png" alt="往期课程精彩瞬间" loading="lazy" />
+  <img src="/academy/review-1-1.png" alt="OpenClaw 入门实战课第一期学员课堂截图" loading="lazy" />
 </figure>
 
 <figure class="academy-gallery__item">
-  <img src="/academy/review-1-2.png" alt="往期课程精彩瞬间" loading="lazy" />
+  <img src="/academy/review-1-2.png" alt="OpenClaw 入门实战课第一期学员互动截图" loading="lazy" />
 </figure>
 
 </div>
@@ -107,6 +107,25 @@ layout: doc
 * 智能体 (Agent) 构建与大模型训练实战专家
 
 
+## ❓ 常见问题
+
+### OpenClaw 入门实战课适合零基础吗？
+
+完全适合。课程从环境搭建开始手把手教学，无需任何 AI 或编程基础。你只需要一台能上网的电脑，跟着导师一步步操作即可完成本地 AI Agent 的部署与配置。
+
+### OpenClaw 入门实战课和网上免费教程有什么区别？
+
+免费教程通常只讲碎片化的安装步骤。本课程是 7 天体系化实战特训，覆盖从本地部署、飞书钉钉通道接入、AI 人格配置到 Skill 技能开发的完整闭环，并且有导师直播答疑和社群长期陪伴，确保你真正跑通全流程。
+
+### 没有编程经验能学会 OpenClaw 吗？
+
+能。课程前四天完全不涉及编码，通过配置文件和可视化操作即可完成 AI 助手的搭建与个性化定制。第六天的 Skill 编写也会从零教起，提供模板和手册，有导师实时带练。
+
+### OpenClaw 入门实战课错过直播怎么办？
+
+所有直播均录制高清视频，支持永久回看。同时设有专属微信社群，课后随时可以向导师和同学提问交流。
+
+
 ## 🚀 立即上车，领养你的龙虾助理！
 
 告别知识焦虑，从环境配置到真正落地，这是你离 AI 最近的一次。
@@ -120,7 +139,7 @@ layout: doc
 <p class="academy-course-schedule__title">📋 课程时间安排</p>
 
 <figure class="academy-course-schedule__figure">
-  <img src="/academy/kechengbiao.png" alt="龙虾破冰计划 · 课程表（开课时间与周期）" loading="lazy" />
+  <img src="/academy/kechengbiao.png" alt="OpenClaw 入门实战课 · 龙虾破冰计划课程表（开课时间与直播安排）" loading="lazy" />
   <figcaption class="academy-course-schedule__caption">本次训练营各节直播与周期安排，请以开营群通知为准。</figcaption>
 </figure>
 

@@ -1,6 +1,6 @@
 ---
-title: 养虾学院
-description: OpenClaw 中国社区实战培训与养虾指南
+title: 养虾学院 · OpenClaw AI Agent 实战培训
+description: OpenClaw 入门实战课报名入口，从零部署你的 AI 私人助理，涵盖本地智能体搭建、飞书钉钉接入与 Skill 开发。
 layout: doc
 outline: [2, 3]
 ---
@@ -50,9 +50,9 @@ outline: [2, 3]
 「养虾学院」沉淀社区最接地气的实战经验：听得懂、抄得走、用得上。无论你是职场新人、AI 爱好者还是开发者，都能在这里找到属于自己的养虾路径。
 
 
-## 特训实战：龙虾破冰计划
+## OpenClaw 入门实战课
 
-养虾学院特训实战已开放详情与报名入口，带你从环境搭建走到通道与技能落地。
+OpenClaw 入门实战课已开放详情与报名入口。7 天直播特训，手把手带你完成本地 AI Agent 部署、飞书钉钉接入、人格配置与 Skill 技能开发全流程落地。
 
 <a class="academy-cta-card" href="/academy/lobster-breakice">
 

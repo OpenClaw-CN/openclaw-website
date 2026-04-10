@@ -97,7 +97,7 @@ export default defineConfig({
           text: '养虾学院',
           items: [
             { text: '学院首页', link: '/academy/' },
-            { text: '龙虾破冰计划 · 入门实战课', link: '/academy/lobster-breakice' }
+            { text: 'OpenClaw 入门实战课 · 龙虾破冰计划', link: '/academy/lobster-breakice' }
           ]
         }
       ],
