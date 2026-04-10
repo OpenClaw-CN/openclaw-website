@@ -37,7 +37,7 @@ features:
   <div style="max-width: 640px; margin: 1rem auto 1.5rem; padding: 1rem 1.25rem; background: var(--vp-c-bg-alt); border-left: 4px solid var(--vp-c-brand-2); border-radius: 0 8px 8px 0; text-align: left;">
     <p style="margin: 0 0 0.5rem 0; color: var(--vp-c-text-1); font-weight: 600; font-size: 1rem;">📢 关于微信交流群限流的说明</p>
     <p style="margin: 0; color: var(--vp-c-text-2); font-size: 14px; line-height: 1.6;">
-      随着 OpenClaw CN 社区的快速发展，每日入群人数激增。为了提供更优质的开源互助环境，避免群消息泛滥，每天晚上 8 点将定时释放新的交流群二维码，各系统每日限额 1 个群。
+      随着 OpenClaw中文社区的快速发展，每日入群人数激增。为了提供更优质的开源互助环境，避免群消息泛滥，每天晚上 8 点将定时释放新的交流群二维码，各系统每日限额 1 个群。
     </p>
   </div>
   
