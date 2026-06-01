@@ -46,7 +46,7 @@ layout: doc
 
 ### 🟡 第二天：伸触角（社交通道配置）
 * **第一节**：2.1 系统运行深度诊断 | 2.2 飞书/钉钉通道配置实战
-* **第二节**：2.3 多场景验证通道交互能力 | 2.4 本地大模型（Olama）怎么配置？
+* **第二节**：2.3 多场景验证通道交互能力 | 2.4 群机器人怎么创建？
 * 📚 *课程材料*：《渠道配置手册》
 * 📝 *课后作业*：思考你要让龙虾做什么？你在里面承担什么角色？你们之间的关系是怎样的？
 
@@ -69,10 +69,10 @@ layout: doc
 * 📝 *课后作业*：按照技能组合丰富你的生活乐趣。
 
 ### 🔵 第六天：铸神兵（亲手编写你的专属 Skill）
-* **第一节**：6.1 什么是SOP
-* **第二节**：6.2 如何为了一个SOP实现一个Skill
+* **第一节**：6.1 什么是SOP，如何为了一个SOP实现一个Skill
+* **第二节**：6.2 多Agent如何配置？
 * 📚 *课程材料*：《Skill开发手册》
-* 📝 *课后作业*：亲手实现一个能解决你简单问题的Skill。
+* 📝 *课后作业*：亲手实现一个能解决你简单问题的Skill，亲手配置多个Agent和渠道机器人。
 
 ### 👑 第七天：登顶之战（结课与斗虾大会）
 * **第一节**：**7.1 学员「斗虾大会」！** 参与斗虾的学员在线路演，提交展示你的龙虾私助实战故事与交互截图。
@@ -83,18 +83,31 @@ layout: doc
 ## 📸 往期精彩回顾
 
 <div class="academy-gallery">
-<div class="academy-gallery__grid">
 
-<figure class="academy-gallery__item">
-  <img src="/academy/review-1-1.png" alt="OpenClaw 入门实战课第一期学员课堂截图" loading="lazy" />
-</figure>
-
-<figure class="academy-gallery__item">
-  <img src="/academy/review-1-2.png" alt="OpenClaw 入门实战课第一期学员互动截图" loading="lazy" />
-</figure>
-
+<div class="academy-gallery__edition">
+  <p class="academy-gallery__edition-title"><span class="academy-gallery__badge">第一期</span>龙虾破冰计划精彩瞬间</p>
+  <div class="academy-gallery__grid">
+    <figure class="academy-gallery__item">
+      <img src="/academy/review-1-1.png" alt="OpenClaw 入门实战课第一期学员课堂截图" loading="lazy" />
+    </figure>
+    <figure class="academy-gallery__item">
+      <img src="/academy/review-1-2.png" alt="OpenClaw 入门实战课第一期学员互动截图" loading="lazy" />
+    </figure>
+  </div>
 </div>
-<p class="academy-gallery__caption">第一期龙虾破冰计划精彩瞬间</p>
+
+<div class="academy-gallery__edition">
+  <p class="academy-gallery__edition-title"><span class="academy-gallery__badge">第二期</span>龙虾破冰计划精彩瞬间</p>
+  <div class="academy-gallery__grid">
+    <figure class="academy-gallery__item">
+      <img src="/academy/review-2-1.png" alt="OpenClaw 入门实战课第二期学员课堂截图" loading="lazy" />
+    </figure>
+    <figure class="academy-gallery__item">
+      <img src="/academy/review-2-2.png" alt="OpenClaw 入门实战课第二期学员互动截图" loading="lazy" />
+    </figure>
+  </div>
+</div>
+
 </div>
 
 
@@ -130,7 +143,7 @@ layout: doc
 
 告别知识焦虑，从环境配置到真正落地，这是你离 AI 最近的一次。
 
-* 📅 **开营时间**：**4 月 11 号 晚上 8:00** 准时发车
+* 📅 **开营时间**：**6 月 10 号 晚上 8:15** 准时发车
 * 🦞 **龙虾品种**：学员可自由选择**原版（OpenClaw 官方）**或**中国社区版**
 * 💡 **学习保障**：直播回看 + 社群答疑 + 优秀作业奖学金
 
@@ -156,8 +169,8 @@ layout: doc
     </div>
     <div class="academy-enroll__meta">
       <div class="academy-enroll__headline academy-enroll__headline--pay" aria-label="早鸟价">
-        <span class="academy-enroll__price-num">¥128</span>
-        <del class="academy-enroll__price-was">原价 ¥196</del>
+        <span class="academy-enroll__price-num">¥168</span>
+        <del class="academy-enroll__price-was">原价 ¥256</del>
       </div>
       <p class="academy-enroll__caption">微信扫码付费。手机端保存图片，微信扫一扫打开即可付款。</p>
     </div>

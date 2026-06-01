@@ -362,6 +362,40 @@
   margin: 1.5rem 0 2rem;
 }
 
+.academy-page--course .academy-gallery__edition {
+  margin: 0;
+  padding: 1.125rem 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--academy-border);
+  background: var(--vp-c-bg-soft);
+}
+
+.academy-page--course .academy-gallery__edition + .academy-gallery__edition {
+  margin-top: 1.25rem;
+}
+
+.academy-page--course .academy-gallery__edition-title {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--vp-c-text-1);
+  text-align: center;
+}
+
+.academy-page--course .academy-gallery__badge {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.15em 0.55em;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--vp-c-bg);
+  vertical-align: baseline;
+  border-radius: 6px;
+  background: var(--vp-c-brand-1);
+}
+
 .academy-page--course .academy-gallery__grid {
   display: -webkit-box;
   display: -webkit-flex;
@@ -410,15 +444,20 @@
   height: auto;
 }
 
-.academy-page--course .academy-gallery__caption {
-  margin: 0.65rem 0 0;
-  font-size: 0.8125rem;
-  line-height: 1.5;
-  color: var(--academy-text-muted);
-  text-align: center;
-}
-
 @media (max-width: 520px) {
+  .academy-page--course .academy-gallery__edition {
+    padding: 1rem 0.75rem 1.125rem;
+  }
+
+  .academy-page--course .academy-gallery__edition + .academy-gallery__edition {
+    margin-top: 1rem;
+  }
+
+  .academy-page--course .academy-gallery__edition-title {
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+
   .academy-page--course .academy-gallery__grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
