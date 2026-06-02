@@ -1,6 +1,6 @@
 ---
 title: 龙虾破冰计划 · OpenClaw 入门实战课
-description: OpenClaw 入门实战课 · 7 天直播特训，从零部署本地 AI Agent 私人助理，涵盖飞书钉钉接入、人格配置与 Skill 技能开发。
+description: OpenClaw 入门实战课 · 7 天直播特训，从零部署本地 AI Agent 私人助理，涵盖飞书钉钉接入、人格配置与 Skill 技能开发，多Agent配置。
 layout: doc
 ---
 
